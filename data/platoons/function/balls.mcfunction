@@ -1,2 +1,3 @@
-say h
-say lol I just committed ts
+say poop
+say pee
+schedule function platoons:balls 1t
