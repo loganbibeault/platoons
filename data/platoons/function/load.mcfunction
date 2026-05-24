@@ -1,17 +1,11 @@
 # ======================================================
-# DEBUG
-# ======================================================
-
-say reloaded!!
-
-# ======================================================
 # GAMERULES
 # ======================================================
 
 gamerule spawn_phantoms false
 gamerule limited_crafting true
 gamerule max_block_modifications 999999999
-execute unless score #debug general matches 1 run gamerule send_command_feedback false
+gamerule send_command_feedback false
 
 # ======================================================
 # WORLD
@@ -60,7 +54,7 @@ team add limboteam
 team modify limboteam seeFriendlyInvisibles true
 team modify limboteam color dark_aqua
 
-#timer
+# STANDARD TIMER
 scoreboard objectives add tickdownseconds dummy
 scoreboard objectives add tickdownminutes dummy
 scoreboard objectives add tickdown dummy
@@ -85,3 +79,19 @@ team modify Tier2 seeFriendlyInvisibles false
 team modify Tier3 seeFriendlyInvisibles false
 team modify Tier4 seeFriendlyInvisibles false
 team modify Tier5 seeFriendlyInvisibles false
+
+# ======================================================
+# DEBUG (TEMP)
+# ======================================================
+
+say reloaded! 
+
+# for debug: scoreboard players set #debug general 1
+execute if score #debug general matches 1 run gamerule send_command_feedback true
+execute if score #debug general matches 1 run say DEBUG MODE!
+
+# ======================================================
+# BEGIN
+# ======================================================
+
+function platoons:loop

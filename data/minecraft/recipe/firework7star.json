@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:firework_star"
+    },
+    {
+      "item": "minecraft:firework_star"
+    },
+    {
+      "item": "minecraft:firework_star"
+    },
+    {
+      "item": "minecraft:firework_star"
+    },
+    {
+      "item": "minecraft:firework_star"
+    },
+    {
+      "item": "minecraft:firework_star"
+    },
+    {
+      "item": "minecraft:firework_star"
+    }
+  ],
+  "result": {
+    "id": "minecraft:barrier",
+    "components": {
+      "minecraft:item_name": "{\"text\":\"Disabled\"}"
+    }
+  }
+}
