@@ -63,7 +63,7 @@ execute as @a[scores={customspurchase=4,spiritcount=2..}] run scoreboard players
 execute as @a[scores={customspurchase=4},tag=completed] at @s run function spirits:complete
 
 #BOULDER BOMB
-execute as @a[scores={customspurchase=5,spiritcount=1..}] at @s run give @s snowball[enchantment_glint_override=1b,custom_name='[{"italic":false,"text":"B","color":"#29BAFF"},{"text":"o","color":"#52D4D9"},{"text":"u","color":"#56EE9E"},{"text":"l","color":"#63F58E"},{"text":"d","color":"#7FEF70"},{"text":"e","color":"#d6fa82"},{"text":"r ","color":"#EEE677"},{"text":"B","color":"#EECE7A"},{"text":"o","color":"#E6B770"},{"text":"m","color":"#DE8F65"},{"text":"b","color":"#D7805B"}]',custom_data={bb_bomb:1}] 2
+execute as @a[scores={customspurchase=5,spiritcount=1..}] at @s run give @s snowball[enchantment_glint_override=1b,custom_name='[{"italic":false,"text":"B","color":"#29BAFF"},{"text":"o","color":"#52D4D9"},{"text":"u","color":"#56EE9E"},{"text":"l","color":"#63F58E"},{"text":"d","color":"#7FEF70"},{"text":"e","color":"#d6fa82"},{"text":"r ","color":"#EEE677"},{"text":"B","color":"#EECE7A"},{"text":"o","color":"#E6B770"},{"text":"m","color":"#DE8F65"},{"text":"b","color":"#D7805B"}]',custom_data={boulder_bomb:1}] 2
 execute as @a[scores={customspurchase=5,spiritcount=1..}] at @s run tag @s add completed
 execute as @a[scores={customspurchase=5,spiritcount=1..}] run scoreboard players remove @s spiritcount 1
 execute as @a[scores={customspurchase=5},tag=completed] at @s run function spirits:complete
