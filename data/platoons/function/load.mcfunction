@@ -6,6 +6,7 @@ gamerule spawn_phantoms false
 gamerule limited_crafting true
 gamerule max_block_modifications 999999999
 gamerule send_command_feedback false
+gamerule allow_entering_nether_using_portals false
 
 # ======================================================
 # WORLD
