@@ -1,7 +1,4 @@
 execute as @e[type=snowball,predicate=customs:boulderbomb/boulderbomb] run tag @s add boulderbomb
-
-execute at @e[tag=boulderbomb] run summon bee
-
 execute as @e[tag=boulderbomb] run data merge entity @s {Item:{id:"minecraft:deepslate",Count:1b}}
 execute at @e[tag=boulderbomb] run particle dust_color_transition{from_color:[0.792,0.796,0.871],scale:0.6,to_color:[0.478,0.467,0.569]} ~ ~.2 ~ 0 0 0 1 1 normal @a
 
