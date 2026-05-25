@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "placed": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": {
+          "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{tag:{healcube:1}}}}}"
+        },
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:honey_block",
+            "properties": {}
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "platoons:raytracing/honey_block/detector"
+  }
+}

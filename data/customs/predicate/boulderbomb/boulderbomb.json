@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:nbt": "{Item:{id:\"minecraft:snowball\",components:{\"minecraft:custom_data\":{boulder_bomb: 1}}}}"
+  }
+}

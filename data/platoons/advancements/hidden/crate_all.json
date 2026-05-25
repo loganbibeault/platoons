@@ -1,0 +1,7 @@
+{
+	"criteria": {
+		"location": {
+			"trigger": "minecraft:location"
+		}
+	}
+}

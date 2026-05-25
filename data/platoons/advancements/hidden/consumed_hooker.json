@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.mainhand": {
+              "components": {
+                "minecraft:custom_data":{"hooker":1}
+              }
+            }
+          }
+        },
+        "item": {
+          "components": {
+            "minecraft:custom_data":{"hooker":1}
+          }
+        }
+      }
+    }
+  }
+}
