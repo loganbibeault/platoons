@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/mining_crate"
+      }
+    }
+  },
+  "parent": "platoons:hidden/crate_all"
+}
