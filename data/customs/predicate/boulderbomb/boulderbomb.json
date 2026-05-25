@@ -2,7 +2,11 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "type": "minecraft:snowball",
-    "nbt": "{Item:{components:{\"minecraft:custom_data\":{bb_bomb:1}}}}"
+    "minecraft:entity_type": "minecraft:snowball",
+    "minecraft:components": {
+      "minecraft:custom_data": {
+        "boulder_bomb": 1
+      }
+    }
   }
 }
