@@ -19,6 +19,11 @@ worldborder center 0 0
 
 execute positioned 0 0 0 positioned over world_surface run setworldspawn ~ ~ ~
 
+# limbo stuff
+
+time of platoons:limbo set 18000
+time of platoons:limbo pause
+
 # ======================================================
 # SCOREBOARD
 # ======================================================
