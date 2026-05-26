@@ -45,7 +45,7 @@ execute as @a[scores={customspurchase=1,spiritcount=1..}] run scoreboard players
 execute as @a[scores={customspurchase=1},tag=completed] at @s run function spirits:complete
 
 #POP BOX
-execute as @a[scores={customspurchase=2,spiritcount=1..}] at @s run give @s phantom_spawn_egg[enchantment_glint_override=1b,item_model="minecraft:lime_shulker_box",custom_name='[{"italic":false,"text":"P","color":"#29BAFF"},{"text":"o","color":"#52D4D9"},{"text":"p","color":"#56EE9E"},{"text":" B","color":"#63F58E"},{"text":"o","color":"#7FEF70"},{"text":"x","color":"#d6fa82"}]',entity_data={id:"minecraft:shulker",Peek:20b,Silent:1b,Invulnerable:1b,Team:"hidename",NoAI:1b,AttachFace:0b,Color:5b,Tags:["popbox_new","popbox"]}] 1
+execute as @a[scores={customspurchase=2,spiritcount=1..}] at @s run give @s phantom_spawn_egg[enchantment_glint_override=1b,item_model="minecraft:lime_shulker_box",custom_name=[{"italic":false,"text":"P","color":"#29BAFF"},{"text":"o","color":"#52D4D9"},{"text":"p","color":"#56EE9E"},{"text":" B","color":"#63F58E"},{"text":"o","color":"#7FEF70"},{"text":"x","color":"#d6fa82"}],entity_data={id:"minecraft:shulker",Peek:20b,Silent:1b,Invulnerable:1b,Team:"hidename",NoAI:1b,AttachFace:0b,Color:5b,Tags:["popbox_new","popbox"]}] 1
 execute as @a[scores={customspurchase=2,spiritcount=1..}] at @s run tag @s add completed
 execute as @a[scores={customspurchase=2,spiritcount=1..}] run scoreboard players remove @s spiritcount 1
 execute as @a[scores={customspurchase=2},tag=completed] at @s run function spirits:complete
@@ -105,7 +105,7 @@ execute as @a[scores={customspurchase=11,spiritcount=4..}] run scoreboard player
 execute as @a[scores={customspurchase=11},tag=completed] at @s run function spirits:complete
 
 # INSTANT STIMULANT
-execute as @a[scores={customspurchase=12,spiritcount=1..}] at @s run give @s minecraft:dragon_breath[enchantment_glint_override=1b,custom_name='[{"italic":false,"text":"I","color":"#29BAFF"},{"text":"n","color":"#52D4D9"},{"text":"s","color":"#56EE9E"},{"text":"t","color":"#63F58E"},{"text":"a","color":"#7FEF70"},{"text":"n","color":"#d6fa82"},{"text":"t","color":"#EEE677"},{"text":" S","color":"#EECE7A"},{"text":"t","color":"#E6B770"},{"text":"i","color":"#DE8F65"},{"text":"m","color":"#D7805B"},{"text":"u","color":"#CF6F52"},{"text":"l","color":"#C75648"},{"text":"a","color":"#BF4240"},{"text":"n","color":"#bf405e"},{"text":"t","color":"#bf4084"}]',max_stack_size=1,custom_data={stim:1b},food={nutrition:0,saturation:0.0,can_always_eat:true,eat_seconds:1000000}]
+execute as @a[scores={customspurchase=12,spiritcount=1..}] at @s run give @s minecraft:dragon_breath[enchantment_glint_override=1b,custom_name=[{"italic":false,"text":"I","color":"#29BAFF"},{"text":"n","color":"#52D4D9"},{"text":"s","color":"#56EE9E"},{"text":"t","color":"#63F58E"},{"text":"a","color":"#7FEF70"},{"text":"n","color":"#d6fa82"},{"text":"t","color":"#EEE677"},{"text":" S","color":"#EECE7A"},{"text":"t","color":"#E6B770"},{"text":"i","color":"#DE8F65"},{"text":"m","color":"#D7805B"},{"text":"u","color":"#CF6F52"},{"text":"l","color":"#C75648"},{"text":"a","color":"#BF4240"},{"text":"n","color":"#bf405e"},{"text":"t","color":"#bf4084"}],max_stack_size=1,custom_data={stim:1b},food={nutrition:0,saturation:0,can_always_eat:true}]
 execute as @a[scores={customspurchase=12,spiritcount=1..}] at @s run tag @s add completed
 execute as @a[scores={customspurchase=12,spiritcount=1..}] run scoreboard players remove @s spiritcount 1
 execute as @a[scores={customspurchase=12},tag=completed] at @s run function spirits:complete
