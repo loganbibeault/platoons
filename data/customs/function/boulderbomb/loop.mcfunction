@@ -23,7 +23,10 @@ scoreboard players set @e[tag=bb_fallingblock,scores={tickdown=0}] tickdown 600
 kill @e[tag=bb_fallingblock,scores={tickdown=0}]
 scoreboard players remove @e[tag=bb_fallingblock] tickdown 1
 
+# Remove plants under the boulder
 execute at @e[tag=bb_fallingblock] if block ~ ~ ~ minecraft:short_grass run setblock ~ ~ ~ air destroy
+execute at @e[tag=bb_fallingblock] if block ~ ~ ~ minecraft:tall_grass run setblock ~ ~ ~ air destroy
+
 execute at @e[tag=bb_fallingblock] run particle falling_dust{block_state:"minecraft:deepslate"} ~ ~ ~ 0.15 0.15 0.15 1 1 normal @a
 execute at @e[tag=bb_fallingblock] run particle falling_dust{block_state:"minecraft:gray_wool"} ~ ~ ~ 0.15 0.15 0.15 1 1 normal @a
 
