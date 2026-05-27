@@ -2,6 +2,8 @@
 
 
 execute as @e[type=snowball,predicate=customs:boulderbomb/boulderbomb] run tag @s add boulderbomb
+
+
 execute as @e[tag=boulderbomb] run data merge entity @s {Item:{id:"minecraft:deepslate",count:1b}}
 execute at @e[tag=boulderbomb] run particle dust_color_transition{from_color:[0.792,0.796,0.871],scale:0.6,to_color:[0.478,0.467,0.569]} ~ ~.2 ~ 0 0 0 1 1 normal @a
 
@@ -36,10 +38,7 @@ execute as @e[tag=bb_fallingblock,tag=!bb_sound] at @s unless block ~ ~-1 ~ air 
 execute as @e[tag=bb_fallingblock] at @s unless block ~ ~-1 ~ air run tag @s add bb_sound
 
 
-
-
 execute at @e[tag=bb_fallingblock] unless block ~ ~-1 ~ air unless block ~ ~-1 ~ #minecraft:shrubbery unless block ~ ~-1 ~ water unless block ~ ~-1 ~ lava run fill ~ ~ ~ ~ ~ ~ deepslate replace air
-
 
 
 schedule function customs:boulderbomb/loop 1

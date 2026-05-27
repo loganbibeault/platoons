@@ -1,3 +1,5 @@
+
+# Make sure the player does not die of fall damage
 execute as @s[scores={pb_glidesound=200}] run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.2 0.8
 scoreboard players remove @s pb_glidesound 1
 scoreboard players set @s[scores={pb_glidesound=..0}] pb_glidesound 200
