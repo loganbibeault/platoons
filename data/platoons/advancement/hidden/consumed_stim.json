@@ -5,7 +5,7 @@
       "conditions": {
         "item": {
           "components": {
-            "minecraft:custom_data":{"stim":1}
+            "minecraft:custom_data":{"stim":true}
           }
         }
       }
