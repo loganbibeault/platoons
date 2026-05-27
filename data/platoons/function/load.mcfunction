@@ -51,6 +51,12 @@ scoreboard objectives add x dummy
 scoreboard objectives add y dummy
 scoreboard objectives add z dummy
 
+# limbo timer
+
+scoreboard objectives add limbotimer dummy
+scoreboard objectives add limbotimer_s dummy
+scoreboard objectives add limbotimer_m dummy
+
 # ======================================================
 # TEAMS
 # ======================================================
@@ -59,11 +65,6 @@ scoreboard objectives add z dummy
 team add limboteam
 team modify limboteam seeFriendlyInvisibles true
 team modify limboteam color dark_aqua
-
-# STANDARD TIMER
-scoreboard objectives add tickdownseconds dummy
-scoreboard objectives add tickdownminutes dummy
-scoreboard objectives add tickdown dummy
 
 # TIERS
 team modify limboteam prefix {"text":"[L] ","color":"gray"}
@@ -97,7 +98,34 @@ execute if score #debug general matches 1 run gamerule send_command_feedback tru
 execute if score #debug general matches 1 run say DEBUG MODE!
 
 # ======================================================
+# VFX / SFX
+# ======================================================
+
+schedule clear vfx:respawn/1
+schedule clear vfx:respawn/2
+schedule clear vfx:respawn/3
+schedule clear vfx:respawn/4
+schedule clear vfx:respawn/5
+schedule clear vfx:respawn/6
+schedule clear vfx:respawn/7
+schedule clear vfx:respawn/8
+schedule clear vfx:respawn/9
+schedule clear vfx:respawn/10
+schedule clear vfx:respawn/11
+schedule clear vfx:respawn/12
+schedule clear vfx:respawn/13
+schedule clear vfx:respawn/14
+schedule clear vfx:respawn/15
+schedule clear vfx:respawn/16
+schedule clear vfx:respawn/17
+function vfx:respawn/1
+
+# ======================================================
 # BEGIN
 # ======================================================
 
+schedule clear platoons:loop
 function platoons:loop
+
+schedule clear platoons:1s
+function platoons:1s
