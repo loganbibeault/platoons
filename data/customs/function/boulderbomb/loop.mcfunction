@@ -24,8 +24,8 @@ kill @e[tag=bb_fallingblock,scores={tickdown=0}]
 scoreboard players remove @e[tag=bb_fallingblock] tickdown 1
 
 # Remove plants under the boulder
-execute at @e[tag=bb_fallingblock] if block ~ ~ ~ minecraft:short_grass run setblock ~ ~ ~ air destroy
-execute at @e[tag=bb_fallingblock] if block ~ ~ ~ minecraft:tall_grass run setblock ~ ~ ~ air destroy
+execute at @e[tag=bb_fallingblock] if block ~ ~ ~ #minecraft:shrubbery run setblock ~ ~ ~ air destroy
+
 
 execute at @e[tag=bb_fallingblock] run particle falling_dust{block_state:"minecraft:deepslate"} ~ ~ ~ 0.15 0.15 0.15 1 1 normal @a
 execute at @e[tag=bb_fallingblock] run particle falling_dust{block_state:"minecraft:gray_wool"} ~ ~ ~ 0.15 0.15 0.15 1 1 normal @a
@@ -34,6 +34,12 @@ execute as @e[tag=bb_fallingblock,tag=!bb_damaged] at @s if entity @e[tag=!bb_fa
 execute as @e[tag=bb_fallingblock] at @s if entity @e[tag=!bb_fallingblock,distance=..1,limit=1] run tag @s add bb_damaged
 execute as @e[tag=bb_fallingblock,tag=!bb_sound] at @s unless block ~ ~-1 ~ air run playsound minecraft:block.deepslate.fall block @a ~ ~ ~
 execute as @e[tag=bb_fallingblock] at @s unless block ~ ~-1 ~ air run tag @s add bb_sound
-execute at @e[tag=bb_fallingblock] unless block ~ ~-1 ~ air unless block ~ ~-1 ~ minecraft:short_grass unless block ~ ~-1 ~ water unless block ~ ~-1 ~ lava run fill ~ ~ ~ ~ ~ ~ deepslate replace air
+
+
+
+
+execute at @e[tag=bb_fallingblock] unless block ~ ~-1 ~ air unless block ~ ~-1 ~ #minecraft:shrubbery unless block ~ ~-1 ~ water unless block ~ ~-1 ~ lava run fill ~ ~ ~ ~ ~ ~ deepslate replace air
+
+
 
 schedule function customs:boulderbomb/loop 1
