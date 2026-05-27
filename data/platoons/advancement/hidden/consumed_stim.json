@@ -1,11 +1,11 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:using_item",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "components": {
-            "minecraft:custom_data":{"stim":true}
+            "minecraft:custom_data":{"stim":1}
           }
         }
       }
