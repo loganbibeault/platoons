@@ -1,0 +1,23 @@
+{
+  "type": "platoons:sewer",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "platoons:sewergen",
+      "layers": [
+        {
+          "height": 2,
+          "block": "minecraft:bedrock"
+        },
+        {
+          "height": 100,
+          "block": "deepslate"
+        },
+        {
+          "height": 2,
+          "block": "minecraft:bedrock"
+        }
+      ]
+    }
+  }
+}
