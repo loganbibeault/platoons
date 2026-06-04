@@ -1,5 +1,4 @@
-# limbo timer
+# === commands that run every second (20t) ===
 
-scoreboard players remove @a limbotimer_s 1
 
 schedule function platoons:1s 1s

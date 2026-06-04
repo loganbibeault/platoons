@@ -52,10 +52,13 @@ scoreboard objectives add y dummy
 scoreboard objectives add z dummy
 
 # limbo timer
-
 scoreboard objectives add limbotimer dummy
 scoreboard objectives add limbotimer_s dummy
 scoreboard objectives add limbotimer_m dummy
+
+
+# spirit timer (post respawn state)
+scoreboard objectives add spirittimer dummy
 
 # ======================================================
 # TEAMS
@@ -86,6 +89,12 @@ team modify Tier2 seeFriendlyInvisibles false
 team modify Tier3 seeFriendlyInvisibles false
 team modify Tier4 seeFriendlyInvisibles false
 team modify Tier5 seeFriendlyInvisibles false
+
+# NO SPIRIT
+team add nospirit
+team modify nospirit color dark_aqua
+team modify nospirit prefix {"text":"[☠] ","color":"gray"}
+
 
 # ======================================================
 # DEBUG (TEMP)
