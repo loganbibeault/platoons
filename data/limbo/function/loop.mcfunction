@@ -52,4 +52,9 @@ title @a[tag=limboleft] actionbar {"text":""}
 execute in overworld as @a[tag=limboleft,distance=0..] run tag @s remove limboleft
 execute in minecraft:overworld run clear @a[distance=0..] minecraft:gray_stained_glass[custom_name='{"text":"Limbo Voxel","italic":false,"color":"gray"}'] 1
 
+# post-limbo spirit timer (aqua names)
+scoreboard players set @a[tag=isdead] spirittimer 1200
+scoreboard players remove @a spirittimer 1
 
+team join nospirit @a[scores={spirittimer=1..,Kills=..0}]
+team join Tier0 @a[scores={spirittimer=..0},team=nospirit]

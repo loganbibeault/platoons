@@ -3,6 +3,8 @@
 # ======================================================
 
 gamerule spawn_phantoms false
+gamerule spawn_patrols false
+gamerule spawn_wandering_traders false
 gamerule limited_crafting true
 gamerule max_block_modifications 999999999
 gamerule send_command_feedback false
@@ -60,6 +62,8 @@ scoreboard objectives add limbotimer_m dummy
 # spirit timer (post respawn state)
 scoreboard objectives add spirittimer dummy
 
+# tierup anim
+scoreboard objectives add tierup dummy
 # ======================================================
 # TEAMS
 # ======================================================
@@ -94,6 +98,7 @@ team modify Tier5 seeFriendlyInvisibles false
 team add nospirit
 team modify nospirit color dark_aqua
 team modify nospirit prefix {"text":"[☠] ","color":"gray"}
+
 
 
 # ======================================================
