@@ -46,13 +46,6 @@ execute as @a[scores={customspurchase=1,spiritcount=1..}] at @s run tag @s add c
 execute as @a[scores={customspurchase=1,spiritcount=1..}] run scoreboard players remove @s spiritcount 1
 execute as @a[scores={customspurchase=1},tag=completed] at @s run function spirits:complete
 
-# POP BOX
-# /give @p phantom_spawn_egg[enchantment_glint_override=1b,item_model="minecraft:lime_shulker_box",entity_data={id:"minecraft:shulker",Peek:20b,Silent:1b,Invulnerable:1b,Team:"hidename",NoAI:1b,AttachFace:0b,Color:5b,Tags:["popbox_new","popbox"]},custom_name=[{"italic":false,"text":"P","color":"#29BAFF"},{"text":"o","color":"#52D4D9"},{"text":"p","color":"#56EE9E"},{"text":" B","color":"#63F58E"},{"text":"o","color":"#7FEF70"},{"text":"x","color":"#d6fa82"}]]
-execute as @a[scores={customspurchase=2,spiritcount=1..}] at @s run give @s phantom_spawn_egg[enchantment_glint_override=1b, item_model="minecraft:lime_shulker_box", entity_data={id:"minecraft:shulker", Peek:20b, Silent:1b, Invulnerable:1b, Team:"hidename", NoAI:1b, AttachFace:0b, Color:5b, Tags:["popbox_new","popbox"]}, custom_name=[{"italic":false,"text":"P","color":"#29BAFF"},{"text":"o","color":"#52D4D9"},{"text":"p","color":"#56EE9E"},{"text":" B","color":"#63F58E"},{"text":"o","color":"#7FEF70"},{"text":"x","color":"#d6fa82"}]] 1
-execute as @a[scores={customspurchase=2,spiritcount=1..}] at @s run tag @s add completed
-execute as @a[scores={customspurchase=2,spiritcount=1..}] run scoreboard players remove @s spiritcount 1
-execute as @a[scores={customspurchase=2},tag=completed] at @s run function spirits:complete
-
 # BOULDER BOMB
 # /give @p snowball[enchantment_glint_override=1b,custom_data={boulder_bomb:1},custom_name=[{"italic":false,"text":"B","color":"#29BAFF"},{"text":"o","color":"#52D4D9"},{"text":"u","color":"#56EE9E"},{"text":"l","color":"#63F58E"},{"text":"d","color":"#7FEF70"},{"text":"e","color":"#d6fa82"},{"text":"r ","color":"#EEE677"},{"text":"B","color":"#EECE7A"},{"text":"o","color":"#E6B770"},{"text":"m","color":"#DE8F65"},{"text":"b","color":"#D7805B"}]]
 execute as @a[scores={customspurchase=5,spiritcount=1..}] at @s run give @s snowball[enchantment_glint_override=1b,custom_data={boulder_bomb:1},custom_name=[{"italic":false,"text":"B","color":"#29BAFF"},{"text":"o","color":"#52D4D9"},{"text":"u","color":"#56EE9E"},{"text":"l","color":"#63F58E"},{"text":"d","color":"#7FEF70"},{"text":"e","color":"#d6fa82"},{"text":"r ","color":"#EEE677"},{"text":"B","color":"#EECE7A"},{"text":"o","color":"#E6B770"},{"text":"m","color":"#DE8F65"},{"text":"b","color":"#D7805B"}]] 2
@@ -66,6 +59,25 @@ execute as @a[scores={customspurchase=12,spiritcount=1..}] at @s run give @s dra
 execute as @a[scores={customspurchase=12,spiritcount=1..}] at @s run tag @s add completed
 execute as @a[scores={customspurchase=12,spiritcount=1..}] run scoreboard players remove @s spiritcount 1
 execute as @a[scores={customspurchase=12},tag=completed] at @s run function spirits:complete
+
+
+##### WIP #####
+
+# POP BOX
+# /give @p phantom_spawn_egg[enchantment_glint_override=1b,item_model="minecraft:lime_shulker_box",entity_data={id:"minecraft:shulker",Peek:20b,Silent:1b,Invulnerable:1b,Team:"hidename",NoAI:1b,AttachFace:0b,Color:5b,Tags:["popbox_new","popbox"]},custom_name=[{"italic":false,"text":"P","color":"#29BAFF"},{"text":"o","color":"#52D4D9"},{"text":"p","color":"#56EE9E"},{"text":" B","color":"#63F58E"},{"text":"o","color":"#7FEF70"},{"text":"x","color":"#d6fa82"}]]
+execute as @a[scores={customspurchase=2,spiritcount=1..}] at @s run give @s phantom_spawn_egg[enchantment_glint_override=1b, item_model="minecraft:lime_shulker_box", entity_data={id:"minecraft:shulker", Peek:20b, Silent:1b, Invulnerable:1b, Team:"hidename", NoAI:1b, AttachFace:0b, Color:5b, Tags:["popbox_new","popbox"]}, custom_name=[{"italic":false,"text":"P","color":"#29BAFF"},{"text":"o","color":"#52D4D9"},{"text":"p","color":"#56EE9E"},{"text":" B","color":"#63F58E"},{"text":"o","color":"#7FEF70"},{"text":"x","color":"#d6fa82"}]] 1
+execute as @a[scores={customspurchase=2,spiritcount=1..}] at @s run tag @s add completed
+execute as @a[scores={customspurchase=2,spiritcount=1..}] run scoreboard players remove @s spiritcount 1
+execute as @a[scores={customspurchase=2},tag=completed] at @s run function spirits:complete
+
+#SUMMIT PAD
+execute as @a[scores={customspurchase=7,spiritcount=1..}] at @s run give @s end_portal_frame[custom_name=[{"italic":false,"text":"S","color":"#29BAFF"},{"text":"u","color":"#52D4D9"},{"text":"m","color":"#56EE9E"},{"text":"m","color":"#63F58E"},{"text":"i","color":"#7FEF70"},{"text":"t ","color":"#d6fa82"},{"text":"P","color":"#EEE677"},{"text":"a","color":"#EECE7A"},{"text":"d","color":"#E6B770"}],custom_data={tag:{summitpad:1}}] 3
+execute as @a[scores={customspurchase=7,spiritcount=1..}] at @s run tag @s add completed
+execute as @a[scores={customspurchase=7,spiritcount=1..}] run scoreboard players remove @s spiritcount 1
+execute as @a[scores={customspurchase=7},tag=completed] at @s run function spirits:complete
+
+
+
 
 
 scoreboard players set @a spirits 0
