@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:tag",
-          "name": "minecraft:moss_blocks",
+          "name": "platoons:supply_drop/supply_drop_blocks",
           "expand": true
         }
       ],

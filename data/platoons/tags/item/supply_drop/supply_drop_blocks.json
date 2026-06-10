@@ -8,9 +8,8 @@
     "#minecraft:sulfur_cube_archetype/regular",
     "#minecraft:sulfur_cube_archetype/slow_sliding",
     "#minecraft:sulfur_cube_archetype/sticky",
-    "#platoons:glass_blocks",
-    "platoons:sulfur_high_res",
-    "#platoons:sulfur_slow_bouncy",
-    "#platoons:sulfur_slow_flat"
+    "#platoons:supply_drop/glass_blocks",
+    "#platoons:supply_drop/sulfur_high_res",
+    "#platoons:supply_drop/sulfur_slow_bouncy"
   ]
 }

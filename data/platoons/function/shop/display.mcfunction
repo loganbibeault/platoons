@@ -1,0 +1,1 @@
+$dialog show @s {type:"minecraft:dialog_list",title:"",body:[{type:"minecraft:plain_message",contents:"TITLE AHHHHH"},$(item1),$(item2),$(item3),$(item4)],exit_action:{label:"Cancel"},dialogs:[]}
