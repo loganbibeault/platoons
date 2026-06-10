@@ -5,4 +5,3 @@ execute as @s[tag=sp_connected] unless block ~ ~ ~ air if block ~ ~1 ~ air if bl
 execute if block ~ ~ ~ air run function customs:summitpad/rescan
 execute unless block ~ ~ ~ air unless block ~ ~1 ~ air run function customs:summitpad/rescan
 execute unless block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~2 ~ air run function customs:summitpad/rescan
-

@@ -71,7 +71,7 @@ execute as @a[scores={customspurchase=2,spiritcount=1..}] run scoreboard players
 execute as @a[scores={customspurchase=2},tag=completed] at @s run function spirits:complete
 
 #SUMMIT PAD
-execute as @a[scores={customspurchase=7,spiritcount=1..}] at @s run give @s end_portal_frame[custom_name=[{"italic":false,"text":"S","color":"#29BAFF"},{"text":"u","color":"#52D4D9"},{"text":"m","color":"#56EE9E"},{"text":"m","color":"#63F58E"},{"text":"i","color":"#7FEF70"},{"text":"t ","color":"#d6fa82"},{"text":"P","color":"#EEE677"},{"text":"a","color":"#EECE7A"},{"text":"d","color":"#E6B770"}],custom_data={tag:{summitpad:1}}] 3
+execute as @a[scores={customspurchase=7,spiritcount=1..}] at @s run give @s end_portal_frame[custom_data={tag:{summitpad:1}}, custom_name=[{"italic":false,"text":"S","color":"#29BAFF"},{"text":"u","color":"#52D4D9"},{"text":"m","color":"#56EE9E"},{"text":"m","color":"#63F58E"},{"text":"i","color":"#7FEF70"},{"text":"t ","color":"#d6fa82"},{"text":"P","color":"#EEE677"},{"text":"a","color":"#EECE7A"},{"text":"d","color":"#E6B770"}]] 3
 execute as @a[scores={customspurchase=7,spiritcount=1..}] at @s run tag @s add completed
 execute as @a[scores={customspurchase=7,spiritcount=1..}] run scoreboard players remove @s spiritcount 1
 execute as @a[scores={customspurchase=7},tag=completed] at @s run function spirits:complete
