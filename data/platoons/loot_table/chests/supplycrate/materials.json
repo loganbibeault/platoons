@@ -2,6 +2,25 @@
   "type": "minecraft:chest",
   "pools": [
     {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "minecraft:moss_blocks",
+          "expand": true
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "min": 32,
+            "max": 64
+          }
+        }
+      ]
+    },
+    {
       "rolls": 7,
       "entries": [
         {
@@ -324,25 +343,6 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:tag",
-          "name": "platoons:supply_drop_blocks",
-          "expand": true
-        }
-      ],
-      "functions": [
-        {
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 32,
-            "max": 64
-          }
         }
       ]
     }
