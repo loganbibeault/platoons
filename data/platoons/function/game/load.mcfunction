@@ -138,8 +138,5 @@ function vfx:respawn/1
 # BEGIN
 # ======================================================
 
-schedule clear platoons:loop
-function platoons:loop
-
-schedule clear platoons:1s
-function platoons:1s
+schedule clear platoons:game/loop
+function platoons:game/loop

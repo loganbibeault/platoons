@@ -2,7 +2,7 @@
 execute in platoons:limbo run kill @e[distance=0..,type=item]
 
 # runs effects every tick
-execute in platoons:limbo run execute as @a[distance=0..] run function limbo:limboeffects
+execute in platoons:limbo run execute as @a[distance=0..] run function platoons:limbo/limboeffects
 
 # starting respawn timer of 2 min
 execute in minecraft:overworld run execute as @e[type=player,distance=0..,tag=isdead] run scoreboard players set @s limbotimer_m 2
@@ -35,7 +35,7 @@ execute in platoons:limbo run execute as @e[type=player,distance=0..,tag=isdead,
 execute in platoons:limbo run execute as @e[type=player,distance=0..,tag=isdead,tag=!limbotunes] run tag @s add limbotunes
 
 # runs leave function when timers out
-execute in platoons:limbo run execute as @a[distance=0..,tag=isdead,scores={limbotimer_m=0,limbotimer_s=0}] run function limbo:limboleave
+execute in platoons:limbo run execute as @a[distance=0..,tag=isdead,scores={limbotimer_m=0,limbotimer_s=0}] run function platoons:limbo/limboleave
 
 # particles
 execute in platoons:limbo run execute as @a[distance=0..,scores={y=..0}] at @s run particle minecraft:sonic_boom ~ ~1 ~ 0 0 0 1 1 force
