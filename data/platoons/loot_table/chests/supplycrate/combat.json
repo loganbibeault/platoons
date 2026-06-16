@@ -2,6 +2,22 @@
   "type": "minecraft:chest",
   "pools": [
     {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "platoons:supply_drop/supply_drop_blocks",
+          "expand": true
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 64
+        }
+      ]
+    },
+    {
       "rolls": 4,
       "entries": [
         {
@@ -74,12 +90,75 @@
       ]
     },
     {
-      "rolls": 1,
+      "rolls": 2,
       "entries": [
         {
-          "type": "minecraft:tag",
-          "name": "minecraft:creeper_drop_music_discs",
-          "expand": true
+          "type": "item",
+          "name": "minecraft:eye_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rib_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ward_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coast_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dune_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:snout_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:spire_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tide_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:vex_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wayfinder_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shaper_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flow_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wild_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:silence_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:raiser_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sentry_armor_trim_smithing_template"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:netherite_upgrade_smithing_template"
         }
       ]
     },
@@ -140,7 +219,7 @@
       ]
     },
     {
-      "rolls": 2,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",

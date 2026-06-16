@@ -1,5 +1,6 @@
 kill @e[type=block_display,tag=supplydropbeacon]
-kill @e[type=armor_stand,tag=supplydrop]
+kill @e[type=item_display,tag=supplydrop]
+kill @e[type=armor_stand,tag=supplydropwaypoint]
 
 # fun effects
 playsound minecraft:entity.firework_rocket.twinkle master @a[distance=0..] ~ ~ ~ 6 1
