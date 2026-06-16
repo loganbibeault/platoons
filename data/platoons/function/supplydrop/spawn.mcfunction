@@ -5,15 +5,17 @@ $summon item_display $(x) 500 $(z) {Tags:["supplydrop"],item:{id:"minecraft:play
 
 
 # bunch of long glass panes to make the beacon beam
-$summon block_display $(x) -64 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,-1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
-$summon block_display $(x) 0 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,-1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
-$summon block_display $(x) 64 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,-1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
-$summon block_display $(x) 128 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,-1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
-$summon block_display $(x) 192 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,-1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
-$summon block_display $(x) 256 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,-1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
-$summon block_display $(x) 320 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,-1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
+$summon block_display $(x) 0 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[1f,0f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
+$summon block_display $(x) 64 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[1f,0f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
+$summon block_display $(x) 128 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[1f,0f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
+$summon block_display $(x) 192 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[1f,0f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
+$summon block_display $(x) 256 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[1f,0f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
+$summon block_display $(x) 320 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[1f,0f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
+$summon block_display $(x) 384 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[1f,0f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
+$summon block_display $(x) 448 $(z) {Tags:["supplydropbeacon"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[1f,0f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,1f],scale:[2f,64f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
 
-$summon block_display $(x) 320 $(z) {Tags:["supplydropbeacon","top"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,-1f],scale:[2f,400f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
+
+$summon block_display $(x) 384 $(z) {Tags:["supplydropbeacon","top"],view_range:9999f,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1f,0f,-1f],scale:[2f,400f,2f]},block_state:{Name:"minecraft:light_blue_stained_glass_pane"}}
 
 # resets and starts the animation
 schedule clear platoons:supplydrop/animations/beacon/reset
