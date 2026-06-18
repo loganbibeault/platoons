@@ -2,3 +2,5 @@ data merge entity @n[type=item_display,tag=supplydrop] {item:{id:"minecraft:play
 schedule function platoons:supplydrop/animations/supplydrop/0 3
 
 waypoint modify @n[type=armor_stand,tag=supplydropwaypoint] color hex 6bdaff
+
+execute at @n[type=item_display,tag=supplydrop] run playsound minecraft:block.note_block.bass master @a[distance=0..80] ~ ~ ~ 0.8 1.06 0.05
