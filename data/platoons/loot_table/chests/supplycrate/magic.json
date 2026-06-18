@@ -5,24 +5,40 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:paper",
+          "name": "minecraft:globe_banner_pattern",
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.5
+              "chance": 1
             }
           ],
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "max_stack_size": 64,
                 "minecraft:enchantment_glint_override": true,
-                "minecraft:custom_name": "{\"text\":\"Keymap Snippet\",\"color\":\"gold\",\"italic\":false}",
+                "minecraft:custom_name": {
+                  "text": "Keymap Snippet",
+                  "color": "gold",
+                  "italic": false,
+                  "obfuscated": false
+                },
                 "minecraft:lore": [
-                  "{\"text\":\"maponeofthree\",\"color\":\"gray\",\"italic\":false,\"obfuscated\":true}",
-                  "{\"text\":\"Three make a map!\",\"color\":\"#B88BD6\",\"italic\":true}"
+                  {
+                    "text": "maponeofthree",
+                    "color": "gray",
+                    "italic": false,
+                    "obfuscated": true
+                  },
+                  {
+                    "text": "Crafting 3 together makes a map!",
+                    "color": "#B88BD6"
+                  }
                 ],
-  "minecraft:custom_data": {"snippet":1}
+                "minecraft:custom_data": {
+                  "snippet": 1
+                }
               }
             }
           ]

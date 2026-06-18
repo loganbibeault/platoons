@@ -27,6 +27,8 @@ function platoons:tier/loop
 # supply drop
 execute as @e[type=item_display,tag=supplydrop] at @s run function platoons:supplydrop/falling
 
+# pocket dimensions
+function platoons:pocket/loop
 
 # ======================================================
 # END OF LINE / RESETS
