@@ -14,6 +14,8 @@ gamerule allow_entering_nether_using_portals false
 # WORLD
 # ======================================================
 
+forceload add 0 0
+
 worldborder set 1000
 worldborder damage amount .1
 worldborder damage buffer 1
@@ -52,6 +54,10 @@ scoreboard objectives add killed_by_player minecraft.killed_by:minecraft.player
 scoreboard objectives add x dummy
 scoreboard objectives add y dummy
 scoreboard objectives add z dummy
+
+# x and y to track distance to an event
+scoreboard objectives add distx dummy
+scoreboard objectives add distz dummy
 
 # limbo timer
 scoreboard objectives add limbotimer dummy

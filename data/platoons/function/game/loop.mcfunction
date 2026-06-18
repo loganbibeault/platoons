@@ -1,18 +1,22 @@
 # hides player waypoints (locator bar)
 execute as @a run attribute @s minecraft:waypoint_transmit_range base set 0
 
-tag @a[scores={killed_by_player=1..}] add isdead
-
 # adds 0 so unset values show/detect as 0
 scoreboard players add @a Kills 0
 scoreboard players add @a killed_by_player 0
 scoreboard players add @a player_kills 0
 
-
 # updates player xyz scores
 execute as @a run execute store result score @s x run data get entity @s Pos[0]
 execute as @a run execute store result score @s y run data get entity @s Pos[1]
 execute as @a run execute store result score @s z run data get entity @s Pos[2]
+
+# ======================================================
+# GAME
+# ======================================================
+
+# dead players are tagged accordingly
+tag @a[scores={killed_by_player=1..}] add isdead
 
 # limbo
 function platoons:limbo/loop
@@ -21,7 +25,7 @@ function platoons:limbo/loop
 function platoons:tier/loop
 
 # supply drop
-function platoons:supplydrop/loop
+execute as @e[type=item_display,tag=supplydrop] at @s run function platoons:supplydrop/falling
 
 
 # ======================================================

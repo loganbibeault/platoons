@@ -1,8 +1,7 @@
-#particle dust_color_transition{from_color:[1.000,0.694,0.522],to_color:[0.188,0.867,1.000],scale:1} ~ 110 ~ 0 90 0 0.1 20 force @a
-#particle dust_color_transition{from_color:[1.000,0.694,0.522],to_color:[0.188,0.867,1.000],scale:1} ~ 110 ~ 0 90 0 0.1 20 force @a
+execute unless block ~ ~-1 ~ #platoons:supplydrop run function platoons:supplydrop/land
 
-particle minecraft:end_rod ~ ~ ~ 0.25 0.25 0.25 0.05 12 force @a
-playsound minecraft:block.note_block.bass master @a[distance=0..] ~ ~ ~ 6 0.6
+particle minecraft:end_rod ~ ~0.25 ~ 0.1 0.1 0.1 0.05 7 force @a
+
 tp @s ~ ~-0.1 ~
 
 

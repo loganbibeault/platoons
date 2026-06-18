@@ -1,8 +1,6 @@
-execute store result storage platoons:supplydropdist in.x int 1.0 run scoreboard players get @s dropdistx
-execute store result storage platoons:supplydropdist in.z int 1.0 run scoreboard players get @s dropdistz
+execute store result storage platoons:supplydropdist in.x int 1.0 run scoreboard players get @s distx
+execute store result storage platoons:supplydropdist in.z int 1.0 run scoreboard players get @s distz
 
 function platoons:test/distance with storage platoons:supplydropdist in
 
-title @a times 0 0.2 0
-
-title @s actionbar [{"text":"Distance = "},{"nbt":"out","storage":"platoons:supplydropdist"}]
+tellraw @s [{"text":"Distance = "},{"nbt":"out","storage":"platoons:supplydropdist"}]
