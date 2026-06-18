@@ -1,0 +1,2 @@
+tellraw @a {"text":"","color":"#EBDE6E","extra":[{"selector":"@s"},{"text":" found a","color":"gold"},{"text":" Magic supply crate","color":"#9DE07E"},{"text":"!","color":"gold"}]}
+advancement revoke @s only platoons:supplycrate/magic
