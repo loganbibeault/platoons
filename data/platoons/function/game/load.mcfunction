@@ -121,24 +121,24 @@ execute if score #debug general matches 1 run say DEBUG MODE!
 # VFX / SFX
 # ======================================================
 
-schedule clear vfx:respawn/1
-schedule clear vfx:respawn/2
-schedule clear vfx:respawn/3
-schedule clear vfx:respawn/4
-schedule clear vfx:respawn/5
-schedule clear vfx:respawn/6
-schedule clear vfx:respawn/7
-schedule clear vfx:respawn/8
-schedule clear vfx:respawn/9
-schedule clear vfx:respawn/10
-schedule clear vfx:respawn/11
-schedule clear vfx:respawn/12
-schedule clear vfx:respawn/13
-schedule clear vfx:respawn/14
-schedule clear vfx:respawn/15
-schedule clear vfx:respawn/16
-schedule clear vfx:respawn/17
-function vfx:respawn/1
+schedule clear platoons:limbo/animations/respawn/1
+schedule clear platoons:limbo/animations/respawn/2
+schedule clear platoons:limbo/animations/respawn/3
+schedule clear platoons:limbo/animations/respawn/4
+schedule clear platoons:limbo/animations/respawn/5
+schedule clear platoons:limbo/animations/respawn/6
+schedule clear platoons:limbo/animations/respawn/7
+schedule clear platoons:limbo/animations/respawn/8
+schedule clear platoons:limbo/animations/respawn/9
+schedule clear platoons:limbo/animations/respawn/10
+schedule clear platoons:limbo/animations/respawn/11
+schedule clear platoons:limbo/animations/respawn/12
+schedule clear platoons:limbo/animations/respawn/13
+schedule clear platoons:limbo/animations/respawn/14
+schedule clear platoons:limbo/animations/respawn/15
+schedule clear platoons:limbo/animations/respawn/16
+schedule clear platoons:limbo/animations/respawn/17
+function platoons:limbo/animations/respawn/1
 
 # ======================================================
 # BEGIN

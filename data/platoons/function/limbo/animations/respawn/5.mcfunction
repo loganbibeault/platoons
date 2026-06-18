@@ -1,5 +1,5 @@
 execute in platoons:limbo run execute as @e[type=player,distance=0..] run title @s times 0 10 0
-schedule function vfx:respawn/6 2 replace
+schedule function platoons:limbo/animations/respawn/6 2 replace
 
 execute in platoons:limbo run execute as @e[type=player,distance=0..,scores={limbotimer_s=10..}] run title @s actionbar ["",{"text":"RES","bold":true,"color":"#2a6e98"},{"text":"P","bold":true,"color":"#55edf2"},{"text":"A","bold":true},{"text":"WNING... ","bold":true,"color":"#2a6e98"},{"color":"dark_gray","bold":false,"score":{"name":"@s","objective":"limbotimer_m"}},{"color":"dark_gray","bold":false,"text":":"},{"color":"dark_gray","bold":false,"score":{"name":"@s","objective":"limbotimer_s"}}]
 

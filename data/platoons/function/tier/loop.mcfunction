@@ -20,8 +20,8 @@ scoreboard players set @a[team=Tier4,scores={Kills=16..}] tierup 5
 team join Tier5 @a[scores={Kills=16..}]
 
 
-execute as @a[team=Tier1,scores={tierup=1..5}] at @s run function vfx:tierup/1
-execute as @a[team=Tier2,scores={tierup=1..5}] at @s run function vfx:tierup/2
-execute as @a[team=Tier3,scores={tierup=1..5}] at @s run function vfx:tierup/3
-execute as @a[team=Tier4,scores={tierup=1..5}] at @s run function vfx:tierup/4
-execute as @a[team=Tier5,scores={tierup=1..5}] at @s run function vfx:tierup/5
+execute as @a[team=Tier1,scores={tierup=1..5}] at @s run function platoons:tier/animations/1
+execute as @a[team=Tier2,scores={tierup=1..5}] at @s run function platoons:tier/animations/2
+execute as @a[team=Tier3,scores={tierup=1..5}] at @s run function platoons:tier/animations/3
+execute as @a[team=Tier4,scores={tierup=1..5}] at @s run function platoons:tier/animations/4
+execute as @a[team=Tier5,scores={tierup=1..5}] at @s run function platoons:tier/animations/5
