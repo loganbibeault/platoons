@@ -1,7 +1,7 @@
 
 # Check for player activation
 tp @n[distance=0..2,tag=pb_slimeblock] ~ ~-1.1 ~
-execute as @s[tag=!pb_cooldown] align xyz if entity @a[dy=1] run function customs:popbox/use
+execute as @s[tag=!pb_cooldown] align xyz if entity @a[dy=1] run function platoons:customs/popbox/use
 
 # Box activation cooldown
 execute if score @s tickdown matches ..599 run data merge entity @s {Peek:100b}
