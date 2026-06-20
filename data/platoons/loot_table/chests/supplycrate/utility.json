@@ -6,185 +6,306 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:tnt",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 6,
-                "max": 12
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:paper",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:enchantment_glint_override": true,
-                "minecraft:custom_name": "{\"text\":\"Keymap Snippet\",\"color\":\"gold\",\"italic\":false}",
-                "minecraft:lore": [
-                  "{\"text\":\"maponeofthree\",\"color\":\"gray\",\"italic\":false,\"obfuscated\":true}",
-                  "{\"text\":\"Three make a map!\",\"color\":\"#B88BD6\",\"italic\":true}"
-                ],
-                "minecraft:custom_data": {"snippet":1}
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 8,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:powered_rail",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 8,
-                "max": 14
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.5
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:rail",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 16,
-                "max": 24
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.5
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:tnt_minecart",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.5
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:firework_rocket",
-          "functions": [
-            {
-              "function": "minecraft:set_fireworks",
-              "explosions": {
-                "values": [
-                  {
-                    "shape": "small_ball",
-                    "colors": [
-                      11743532
-                    ]
-                  },
-                  {
-                    "shape": "small_ball",
-                    "colors": [
-                      11743532
-                    ]
-                  },
-                  {
-                    "shape": "small_ball",
-                    "colors": [
-                      11743532
-                    ]
-                  }
-                ],
-                "mode": "replace_all"
-              }
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 12
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:slime_block",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 12
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.5
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:sculk_sensor",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 10
-              }
-            }
-          ],
+          "name": "minecraft:globe_banner_pattern",
           "conditions": [
             {
               "condition": "minecraft:random_chance",
               "chance": 1
             }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "max_stack_size": 64,
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_name": {
+                  "text": "Keymap Snippet",
+                  "color": "gold",
+                  "italic": false,
+                  "obfuscated": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "maponeofthree",
+                    "color": "gray",
+                    "italic": false,
+                    "obfuscated": true
+                  },
+                  {
+                    "text": "Crafting 3 together makes a map!",
+                    "color": "#B88BD6"
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "snippet": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:water_bucket",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lava_bucket",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:milk_bucket",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:powder_snow_bucket",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_shovel",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_pickaxe",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shears",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bundle",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pointed_dripstone",
+          "weight": 15,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 12
+              }
+            }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:lever",
+          "name": "minecraft:red_bed",
+          "weight": 15,
+          "conditions": [],
+          "functions": []
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trial_key",
+          "weight": 10,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_upgrade_smithing_template",
+          "weight": 5,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wind_charge",
+          "weight": 15,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobweb",
+          "weight": 15,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wolf_spawn_egg",
+          "weight": 5,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pig_spawn_egg",
+          "weight": 10,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sheep_spawn_egg",
+          "weight": 10,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chicken_spawn_egg",
+          "weight": 10,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chicken_spawn_egg",
+          "weight": 10,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cow_spawn_egg",
+          "weight": 10,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:horse_spawn_egg",
+          "weight": 5,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:slime_block",
+          "weight": 15,
+          "conditions": [],
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -193,188 +314,145 @@
                 "max": 15
               }
             }
-          ],
-          "conditions": [
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tnt",
+          "weight": 10,
+          "conditions": [],
+          "functions": [
             {
-              "condition": "minecraft:random_chance",
-              "chance": 0.5
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:redstone_torch",
+          "weight": 20,
+          "conditions": [],
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 10,
-                "max": 25
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.6
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:dropper",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
+                "min": 6,
                 "max": 15
               }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.4
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:hopper",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 15
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.8
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:note_block",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 15
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.4
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:dispenser",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 15
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.5
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:piston",
+          "weight": 20,
+          "conditions": [],
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 5,
-                "max": 15
+                "min": 3,
+                "max": 8
               }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.6
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:sticky_piston",
+          "weight": 20,
+          "conditions": [],
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 10,
-                "max": 15
+                "min": 3,
+                "max": 8
               }
             }
-          ],
-          "conditions": [
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:observer",
+          "weight": 20,
+          "conditions": [],
+          "functions": [
             {
-              "condition": "minecraft:random_chance",
-              "chance": 0.9
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 8
+              }
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:repeater",
+          "weight": 20,
+          "conditions": [],
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 5,
-                "max": 32
+                "min": 3,
+                "max": 8
               }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.7
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:comparator",
+          "name": "minecraft:sculk_sensor",
+          "weight": 10,
+          "conditions": [],
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 5,
-                "max": 15
+                "min": 1,
+                "max": 3
               }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.5
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:redstone_block",
+          "name": "minecraft:tnt_minecart",
+          "weight": 7,
+          "conditions": [],
+          "functions": []
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shulker_shell",
+          "weight": 15,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "weight": 15,
+          "conditions": [],
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -383,72 +461,69 @@
                 "max": 5
               }
             }
-          ],
-          "conditions": [
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:respawn_anchor",
+          "weight": 10,
+          "conditions": [],
+          "functions": [
             {
-              "condition": "minecraft:random_chance",
-              "chance": 0.6
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:observer",
+          "name": "minecraft:end_crystal",
+          "weight": 5,
+          "conditions": [],
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 5,
-                "max": 15
+                "min": 1,
+                "max": 2
               }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.5
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:redstone",
+          "name": "minecraft:anvil",
+          "weight": 10,
+          "conditions": [],
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 16,
-                "max": 45
+                "min": 1,
+                "max": 1
               }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.7
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:trapped_chest",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 15
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.5
-            }
-          ]
+          "name": "minecraft:diamond_shovel",
+          "weight": 20,
+          "conditions": [],
+          "functions": []
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_pickaxe",
+          "weight": 20,
+          "conditions": [],
+          "functions": []
         }
       ]
     }
-  ]
+  ],
+  "functions": []
 }

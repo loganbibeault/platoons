@@ -1,2 +1,2 @@
 execute as @a at @s run playsound minecraft:block.note_block.iron_xylophone master @s ~ ~ ~ 100 1 1
-schedule function platoons:supplydrop/alerts/land/2 3
+schedule function platoons:supplydrop/alerts/announce/2 3
