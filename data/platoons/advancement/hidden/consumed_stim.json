@@ -12,5 +12,8 @@
         }
       }
     }
+  },
+  "rewards": {
+    "function": "customs:stim/use"
   }
 }
