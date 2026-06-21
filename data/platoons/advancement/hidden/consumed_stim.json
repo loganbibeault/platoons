@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "stim": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "platoons:customs/stim/use"
+  }
+}
