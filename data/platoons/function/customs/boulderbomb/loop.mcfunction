@@ -1,7 +1,7 @@
 # GIVE COMMAND: give @p snowball[enchantment_glint_override=1b,custom_data={boulder_bomb:1},custom_name=[{"italic":false,"text":"B","color":"#29BAFF"},{"text":"o","color":"#52D4D9"},{"text":"u","color":"#56EE9E"},{"text":"l","color":"#63F58E"},{"text":"d","color":"#7FEF70"},{"text":"e","color":"#d6fa82"},{"text":"r ","color":"#EEE677"},{"text":"B","color":"#EECE7A"},{"text":"o","color":"#E6B770"},{"text":"m","color":"#DE8F65"},{"text":"b","color":"#D7805B"}]] 2
 
 
-execute as @e[type=snowball,predicate=platoons:customs/boulderbomb/boulderbomb] run tag @s add boulderbomb
+execute as @e[type=snowball,predicate=platoons:boulderbomb/boulderbomb] run tag @s add boulderbomb
 
 
 execute as @e[tag=boulderbomb] run data merge entity @s {Item:{id:"minecraft:deepslate",count:1b}}
@@ -26,7 +26,7 @@ kill @e[tag=bb_fallingblock,scores={tickdown=0}]
 scoreboard players remove @e[tag=bb_fallingblock] tickdown 1
 
 # Remove plants under the boulder
-execute at @e[tag=bb_fallingblock] if block ~ ~ ~ #minecraft:shrubbery run setblock ~ ~ ~ air destroy
+execute at @e[tag=bb_fallingblock] if block ~ ~ ~ #platoons:customs/shrubbery run setblock ~ ~ ~ air destroy
 
 
 execute at @e[tag=bb_fallingblock] run particle falling_dust{block_state:"minecraft:deepslate"} ~ ~ ~ 0.15 0.15 0.15 1 1 normal @a
