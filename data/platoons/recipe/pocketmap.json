@@ -34,7 +34,7 @@
       ],
       "minecraft:max_stack_size": 1,
       "minecraft:enchantment_glint_override": true,
-      "minecraft:custom_data": "{dormantmap:1}"
+      "minecraft:custom_data": "{dormantmap:1b}"
     }
   }
 }

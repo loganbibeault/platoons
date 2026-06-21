@@ -47,6 +47,22 @@
       ]
     },
     {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "platoons:supply_drop/supply_drop_blocks",
+          "expand": true
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 64
+        }
+      ]
+    },
+    {
       "rolls": 2,
       "entries": [
         {
