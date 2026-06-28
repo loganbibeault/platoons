@@ -26,7 +26,7 @@ kill @e[tag=bb_fallingblock,scores={tickdown=0}]
 scoreboard players remove @e[tag=bb_fallingblock] tickdown 1
 
 # Remove plants under the boulder
-execute at @e[tag=bb_fallingblock] if block ~ ~ ~ #platoons:customs/shrubbery run setblock ~ ~ ~ air destroy
+execute at @e[tag=bb_fallingblock] if block ~ ~ ~ #platoons:shrubbery run setblock ~ ~ ~ air destroy
 
 
 execute at @e[tag=bb_fallingblock] run particle falling_dust{block_state:"minecraft:deepslate"} ~ ~ ~ 0.15 0.15 0.15 1 1 normal @a
@@ -38,7 +38,7 @@ execute as @e[tag=bb_fallingblock,tag=!bb_sound] at @s unless block ~ ~-1 ~ air 
 execute as @e[tag=bb_fallingblock] at @s unless block ~ ~-1 ~ air run tag @s add bb_sound
 
 
-execute at @e[tag=bb_fallingblock] unless block ~ ~-1 ~ air unless block ~ ~-1 ~ #minecraft:shrubbery unless block ~ ~-1 ~ water unless block ~ ~-1 ~ lava run fill ~ ~ ~ ~ ~ ~ deepslate replace air
+execute at @e[tag=bb_fallingblock] unless block ~ ~-1 ~ air unless block ~ ~-1 ~ #platoons:shrubbery unless block ~ ~-1 ~ water unless block ~ ~-1 ~ lava run fill ~ ~ ~ ~ ~ ~ deepslate replace air
 
 
 schedule function platoons:customs/boulderbomb/loop 1

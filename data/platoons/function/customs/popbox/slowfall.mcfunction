@@ -10,4 +10,4 @@ effect give @s[tag=!pb_preslowfall] slow_falling 1 0 true
 effect give @s[tag=pb_preslowfall] slow_falling 1 0 false
 particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0 1 force
 
-execute unless block ~ ~-1 ~ #landing if score @s pb_glidesound matches ..201 run function platoons:customs/popbox/landing
+execute unless block ~ ~-1 ~ #platoons:landing if score @s pb_glidesound matches ..201 run function platoons:customs/popbox/landing
