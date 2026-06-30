@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:equipment": {
+      "mainhand": {
+        "items": "filled_map",
+        "components": {
+          "minecraft:custom_data": {
+            "dormantmap": 1
+          }
+        }
+      }
+    }
+  }
+}

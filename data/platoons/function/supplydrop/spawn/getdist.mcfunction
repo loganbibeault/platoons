@@ -14,4 +14,4 @@ execute as @a run scoreboard players operation @s distz -= @n[type=item_display,
 data modify storage platoons:supplydropdist in.y set value 0
 
 # rest of commands are handled indivdually in this function, one player at a time
-execute as @p[tag=!supplydropdistcheck] run function platoons:supplydrop/reveal
+execute as @p[tag=!supplydropdistcheck] run function platoons:supplydrop/spawn/reveal

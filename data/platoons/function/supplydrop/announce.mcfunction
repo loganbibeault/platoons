@@ -1,5 +1,5 @@
 # spawns the drop one minute after announcing it
-#schedule function platoons:supplydrop/activate 60s
+schedule function platoons:supplydrop/activate 55s
 
 # plays alert jingle
 function platoons:supplydrop/alerts/announce/1

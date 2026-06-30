@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:map_color": 12094422,
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "keymap": 1
+                },
+                "minecraft:custom_name": {
+                  "text": "Portal Map",
+                  "color": "gold",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective": "x"
+                    },
+                    "color": "#EBDE6E",
+                    "italic": false
+                  },
+                  {
+                    "text": " / ",
+                    "color": "#7EB4CC",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective": "y"
+                    },
+                    "color": "#EBDE6E",
+                    "italic": false
+                  },
+                  {
+                    "text": " / ",
+                    "color": "#7EB4CC",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective": "z"
+                    },
+                    "color": "#EBDE6E",
+                    "italic": false
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

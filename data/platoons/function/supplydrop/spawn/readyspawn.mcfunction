@@ -1,0 +1,1 @@
+function platoons:supplydrop/spawn/spawn with storage platoons:droppos

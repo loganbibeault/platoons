@@ -19,10 +19,10 @@ schedule function platoons:supplydrop/animations/beacon/kill 17
 execute store result score #crate general run random value 1..4
 
 # spawns a chest minecart based on the roll
-execute if score #crate general matches 1 run summon minecraft:chest_minecart ~ ~-0.75 ~ {DisplayState:{Name:"minecraft:weathered_copper_chest"},CustomNameVisible:0b,Tags:["supplycrate"],CustomName:[{"text":"Supply Crate","color":"#db7304","italic":false}],LootTable:"platoons:chests/supplycrate/combat"}
-execute if score #crate general matches 2 run summon minecraft:chest_minecart ~ ~-0.75 ~ {DisplayState:{Name:"minecraft:weathered_copper_chest"},CustomNameVisible:0b,Tags:["supplycrate"],CustomName:[{"text":"Supply Crate","color":"#db7304","italic":false}],LootTable:"platoons:chests/supplycrate/materials"}
-execute if score #crate general matches 3 run summon minecraft:chest_minecart ~ ~-0.75 ~ {DisplayState:{Name:"minecraft:weathered_copper_chest"},CustomNameVisible:0b,Tags:["supplycrate"],CustomName:[{"text":"Supply Crate","color":"#db7304","italic":false}],LootTable:"platoons:chests/supplycrate/utility"}
-execute if score #crate general matches 4 run summon minecraft:chest_minecart ~ ~-0.75 ~ {DisplayState:{Name:"minecraft:weathered_copper_chest"},CustomNameVisible:0b,Tags:["supplycrate"],CustomName:[{"text":"Supply Crate","color":"#db7304","italic":false}],LootTable:"platoons:chests/supplycrate/magic"}
+execute if score #crate general matches 1 run summon minecraft:chest_minecart ~ ~-0.75 ~ {DisplayState:{Name:"minecraft:weathered_copper_chest"},CustomNameVisible:0b,Tags:["supplycrate"],CustomName:[{"text":"Supply Crate","color":"#db7304","italic":false}],LootTable:"platoons:supplycrate/combat"}
+execute if score #crate general matches 2 run summon minecraft:chest_minecart ~ ~-0.75 ~ {DisplayState:{Name:"minecraft:weathered_copper_chest"},CustomNameVisible:0b,Tags:["supplycrate"],CustomName:[{"text":"Supply Crate","color":"#db7304","italic":false}],LootTable:"platoons:supplycrate/materials"}
+execute if score #crate general matches 3 run summon minecraft:chest_minecart ~ ~-0.75 ~ {DisplayState:{Name:"minecraft:weathered_copper_chest"},CustomNameVisible:0b,Tags:["supplycrate"],CustomName:[{"text":"Supply Crate","color":"#db7304","italic":false}],LootTable:"platoons:supplycrate/utility"}
+execute if score #crate general matches 4 run summon minecraft:chest_minecart ~ ~-0.75 ~ {DisplayState:{Name:"minecraft:weathered_copper_chest"},CustomNameVisible:0b,Tags:["supplycrate"],CustomName:[{"text":"Supply Crate","color":"#db7304","italic":false}],LootTable:"platoons:supplycrate/magic"}
 scoreboard players set #crate general 0
 
 # no longer forces the chunk to load
