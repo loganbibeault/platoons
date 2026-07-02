@@ -1,0 +1,141 @@
+{
+  "name": "platoons:floater",
+  "fallback": "minecraft:empty",
+  "elements": [
+	{	
+      "weight": 10,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_1",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 3,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_2",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 7,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_3",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_4",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 3,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_5a",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 3,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_5b",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 3,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_5c",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 7,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_6",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 8,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_7",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 3,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_8",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 3,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_9",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 3,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_10",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 11,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_11",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 6,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_12",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 5,
+      "element": {
+        "location": "platoons:boneyard/floater/floater_13",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

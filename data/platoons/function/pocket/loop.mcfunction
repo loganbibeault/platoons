@@ -20,7 +20,14 @@ execute as @a[predicate=platoons:pocket/holdingdormantmap] run title @s subtitle
 #execute as @e[tag=pocket_armor] at @s if entity @a[distance=0..30] run function platoons:pocket/
 
 #summon armor_stand ~ ~ ~ {Tags:["pocketwaypoint"],NoBasePlate:1b,Small:1b,Invisible:1b,Marker:1b,CustomNameVisible:0b,CustomName:"Pocket Portal",attributes:[{id:"minecraft:waypoint_transmit_range",base:9999}]}
-tellraw @a {"text":"██▌ █▌  ██▌ ██▌ ██▌ █▀▌ ██▌ █▀▀"}
-tellraw @a {"text":"█▄▌ █▌  █▄▌ ██▌ █▀▌ █▄▌ █  ▌ ███"}
-tellraw @a {"text":" "}
-#tellraw @a {"text":"████████████████████████"}
+
+execute if entity @e[tag=pocket_exit] at @e[tag=small_structure_gen] run place jigsaw platoons:desolatia/small_structure small_structure 1 ~ ~ ~
+execute if entity @e[tag=pocket_exit] run kill @e[tag=small_structure_gen]
+execute if entity @e[tag=pocket_exit] at @e[tag=big_structure_gen] run place jigsaw platoons:desolatia/big_structure big_structure 1 ~ ~ ~
+execute if entity @e[tag=pocket_exit] run kill @e[tag=big_structure_gen]
+
+#execute if entity @e[tag=pocket_exit] at @e[tag=pocket_bookshelf] run loot insert ~ ~ ~ loot minecraft:chests/general_chiseled_bookshelf
+execute if entity @e[tag=pocket_exit] run kill @e[tag=pocket_bookshelf]
+
+execute if entity @e[tag=pocket_exit] at @e[tag=boneyard_tower_top] run place jigsaw platoons:boneyard/tower_top tower_top 1 ~ ~3 ~
+execute if entity @e[tag=pocket_exit] run kill @e[tag=boneyard_tower_top]
