@@ -1,0 +1,13 @@
+execute at @s[scores={general=1..6000}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 1
+execute at @s[scores={general=1..5500}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 5
+execute at @s[scores={general=1..5000}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 10
+execute at @s[scores={general=1..4500}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 20
+execute at @s[scores={general=1..4000}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 30
+execute at @s[scores={general=1..3500}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 40
+execute at @s[scores={general=1..3000}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 50
+execute at @s[scores={general=1..2500}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 60
+execute at @s[scores={general=1..2000}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 70
+execute at @s[scores={general=1..1500}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 80
+execute at @s[scores={general=1..1000}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 90
+execute at @s[scores={general=1..500}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 100
+execute at @s[scores={general=1..500}] run particle minecraft:enchanted_hit ~ ~2 ~-.75 1 1 0 1 150

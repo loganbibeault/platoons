@@ -1,0 +1,35 @@
+{
+  "attributes": {
+    "minecraft:audio/ambient_sounds": {
+      "loop": "minecraft:ambient.basalt_deltas.loop",
+      "mood": {
+        "block_search_extent": 8,
+        "offset": 2.0,
+        "sound": "minecraft:ambient.basalt_deltas.mood",
+        "tick_delay": 6000
+      }
+    },
+    "minecraft:audio/background_music": {
+      "default": {
+        "max_delay": 24000,
+        "min_delay": 12000,
+        "sound": "minecraft:music.nether.basalt_deltas"
+      }
+    },
+    "minecraft:visual/fog_color": "#d75d24",
+    "minecraft:visual/fog_end_distance":1024,
+    "minecraft:visual/block_light_tint":"#df9604",
+    "minecraft:visual/ambient_light_color":"#f08548"
+
+  },
+  "carvers": [],
+  "downfall": 0.0,
+  "effects": {
+    "water_color": "#547368"
+  },
+  "features": [],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {},
+  "temperature": 0.8
+}

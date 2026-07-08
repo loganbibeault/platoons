@@ -11,6 +11,10 @@ execute as @a run execute store result score @s x run data get entity @s Pos[0]
 execute as @a run execute store result score @s y run data get entity @s Pos[1]
 execute as @a run execute store result score @s z run data get entity @s Pos[2]
 
+# common player check
+execute store result score #playercount general if entity @a
+execute if score #debug general matches 1 run scoreboard players set #playercount general 999
+
 # ======================================================
 # GAME
 # ======================================================

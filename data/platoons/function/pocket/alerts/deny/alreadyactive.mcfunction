@@ -1,0 +1,2 @@
+tellraw @s [{"text":"⚠ ","color":"#EBDE6E"},{"text":"There is already an active ","color":"#D97373"},{"text":"Pocket Dimension Portal","color":"#B88BD6"}]
+execute at @s run playsound minecraft:block.note_block.iron_xylophone master @s ~ ~ ~ 100 0.85 1

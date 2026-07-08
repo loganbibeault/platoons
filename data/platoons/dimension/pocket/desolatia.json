@@ -1,0 +1,11 @@
+{
+  "type": "platoons:pocket/desolatia",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "platoons:pocket/desolatia",
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}

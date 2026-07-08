@@ -22,7 +22,7 @@
       },
       "minecraft:item_model": "minecraft:map",
       "minecraft:custom_name": {
-        "text": "Portal Map",
+        "text": "Portal Keymap",
         "color": "gold",
         "italic": false
       },

@@ -16,10 +16,20 @@ title @a[predicate=platoons:pocket/holdingdormantmap] times 0 2 2
 title @a[predicate=platoons:pocket/holdingdormantmap] title {"text":""}
 execute as @a[predicate=platoons:pocket/holdingdormantmap] run title @s subtitle [{"text":"Press ","color":"#B88BD6"},{"keybind":"key.use","color":"#7EB4CC"},{"text":" to activate","color":"#B88BD6"}]
 
+# detect key
+
+execute as @e[tag=portal_keyhole,tag=!keyhole_opening,tag=!keyhole_open] on target run execute at @s[predicate=platoons:pocket/holdingkeymap] run function platoons:pocket/open/check
+
+# reset detection
+execute as @e[tag=portal_keyhole] run data remove entity @s interaction
+
+# portal opening anim
+execute as @e[type=interaction,tag=keyhole_active,tag=!keyhole_open] run function platoons:pocket/open/loop
+
 # generate armor on suitable armor stands
 #execute as @e[tag=pocket_armor] at @s if entity @a[distance=0..30] run function platoons:pocket/
 
-#summon armor_stand ~ ~ ~ {Tags:["pocketwaypoint"],NoBasePlate:1b,Small:1b,Invisible:1b,Marker:1b,CustomNameVisible:0b,CustomName:"Pocket Portal",attributes:[{id:"minecraft:waypoint_transmit_range",base:9999}]}
+execute in platoons:pocket/desolatia at @a[distance=0..] run particle minecraft:falling_dust{block_state:"minecraft:jungle_planks"} ~ ~ ~ 30 30 30 1 10
 
 execute if entity @e[tag=pocket_exit] at @e[tag=small_structure_gen] run place jigsaw platoons:desolatia/small_structure small_structure 1 ~ ~ ~
 execute if entity @e[tag=pocket_exit] run kill @e[tag=small_structure_gen]

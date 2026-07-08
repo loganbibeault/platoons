@@ -17,7 +17,7 @@
                   "keymap": 1
                 },
                 "minecraft:custom_name": {
-                  "text": "Portal Map",
+                  "text": "Portal Keymap",
                   "color": "gold",
                   "italic": false
                 }
