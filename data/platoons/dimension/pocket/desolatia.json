@@ -5,7 +5,7 @@
     "settings": {
       "biome": "platoons:pocket/desolatia",
       "layers": [],
-      "structure_overrides": []
+      "structure_overrides": ["platoons:pocket/desolatia/desolatia"]
     }
   }
 }

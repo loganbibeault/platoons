@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "platoons:pocket/desolatia/high_islands",
+      "weight": 1
+    },
+    {
+      "structure": "platoons:pocket/desolatia/low_islands",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 8,
+    "separation": 5,
+    "salt": 1
+  }
+}

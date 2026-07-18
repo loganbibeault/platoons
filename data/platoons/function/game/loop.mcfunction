@@ -34,6 +34,9 @@ execute as @e[type=item_display,tag=supplydrop] at @s run function platoons:supp
 # pocket dimensions
 function platoons:pocket/loop
 
+# shop
+function platoons:shop/loop
+
 # ======================================================
 # END OF LINE / RESETS
 # ======================================================

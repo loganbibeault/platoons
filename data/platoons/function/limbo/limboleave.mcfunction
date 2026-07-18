@@ -6,11 +6,5 @@ clear @s
 effect clear @s
 attribute @s minecraft:safe_fall_distance base reset
 tag @s add limboleft
-gamerule immediate_respawn true
-gamerule show_death_messages false
-kill @s
-stopsound @s * minecraft:entity.player.death
-stopsound @s * minecraft:entity.player.hurt
-gamerule immediate_respawn false
-gamerule show_death_messages true
+execute in the_end run tp @s 0 2 0 0 90
 team leave @s

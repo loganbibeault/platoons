@@ -1,4 +1,93 @@
 {
-  "type": "minecraft:notice",
-  "title": "                                                                        "
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "                                                                                                                                                     "
+  },
+  "external_title": [
+    {
+      "player": {
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2ZhYWJhOGM3MjVjYTExYjU0ZDI2NWE2NDIwYjYzZTkwYzUzNWNlMzhkN2E0NjRlNWNlMTA1YTk0NDI1OTE4In19fQ=="
+          }
+        ]
+      },
+      "shadow_color": 1526704640
+    },
+    {
+      "text": " Platoons!",
+      "color": "#ff5542",
+      "shadow_color": -16767102
+    }
+  ],
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "██▌ █▌   ██▌ ███ ",
+          "color": "#EC6F0C"
+        },
+        {
+          "text": "██▌ █▀▌",
+          "color": "#00EAA2"
+        },
+        {
+          "text": " █▌ ▌ █▀▀\n",
+          "color": "#EC6F0C"
+        },
+        {
+          "text": "█▄▌ █▌   █▄▌   █  ",
+          "color": "#BF1C1C"
+        },
+        {
+          "text": " █▀▌ █▄▌",
+          "color": "#00BEC7"
+        },
+        {
+          "text": " █ ▌▌ ███\n",
+          "color": "#BF1C1C"
+        },
+        {
+          "text": "█▌   ██▌ █  ▌   █  ",
+          "color": "#8D0C34"
+        },
+        {
+          "text": " █▄▌ ██▌",
+          "color": "#0062B0"
+        },
+        {
+          "text": " █ ▌▌ ▄▄█\n\n",
+          "color": "#8D0C34"
+        }
+      ],
+      "width": 230
+    }
+  ],
+  "inputs": [],
+  "after_action": "wait_for_response",
+  "pause": false,
+  "actions": [
+    {
+      "label": "Spirit Shop",
+      "width": 120,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger shop"
+      }
+    },
+    {
+      "label": "Options",
+      "width": 120
+    },
+    {
+      "label": "Stats",
+      "width": 120
+    },
+    {
+      "label": "How to Play",
+      "width": 120
+    }
+  ]
 }

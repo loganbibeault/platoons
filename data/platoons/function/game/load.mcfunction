@@ -28,6 +28,13 @@ execute positioned 0 0 0 positioned over world_surface run setworldspawn ~ ~ ~
 time of platoons:limbo set 18000
 time of platoons:limbo pause
 
+# end setup for leaving
+execute in the_end run forceload add 0 0
+execute in the_end run fill -2 0 -2 2 6 2 end_gateway
+execute in the_end run fill -1 0 -1 1 5 1 barrier
+execute in the_end run fill 0 2 0 0 4 0 air
+execute in the_end run fill -1 1 -1 1 1 1 end_portal
+
 # ======================================================
 # SCOREBOARD
 # ======================================================
@@ -64,12 +71,14 @@ scoreboard objectives add limbotimer dummy
 scoreboard objectives add limbotimer_s dummy
 scoreboard objectives add limbotimer_m dummy
 
-
 # spirit timer (post respawn state)
 scoreboard objectives add spirittimer dummy
 
 # tierup anim
 scoreboard objectives add tierup dummy
+
+# shop trigger
+scoreboard objectives add shop trigger
 # ======================================================
 # TEAMS
 # ======================================================
@@ -105,7 +114,15 @@ team add nospirit
 team modify nospirit color dark_aqua
 team modify nospirit prefix {"text":"[☠] ","color":"gray"}
 
+# ======================================================
+# MISC
+# ======================================================
 
+# pocket bossbar
+bossbar add platoons:pocketcollapse {"text":"Dimension Collapsing In"}
+bossbar set platoons:pocketcollapse color blue
+bossbar set platoons:pocketcollapse max 18000
+bossbar set platoons:pocketcollapse style notched_20
 
 # ======================================================
 # DEBUG (TEMP)

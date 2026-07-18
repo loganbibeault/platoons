@@ -1,6 +1,5 @@
 kill @e[tag=pocketwaypoint]
 
-say spawning
 # stores the result of the following /random commands for x, y, and z positions in "platoons:portalroompos"
 execute store result storage platoons:portalroompos x int 1.0 run random value -450..450
 execute store result storage platoons:portalroompos y int 1.0 run random value -50..40

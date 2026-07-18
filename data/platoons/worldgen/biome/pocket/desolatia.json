@@ -17,9 +17,11 @@
       }
     },
     "minecraft:visual/fog_color": "#d75d24",
+    "minecraft:visual/sky_color": "#d75d24",
     "minecraft:visual/fog_end_distance":1024,
     "minecraft:visual/block_light_tint":"#df9604",
-    "minecraft:visual/ambient_light_color":"#f08548"
+    "minecraft:visual/ambient_light_color":"#f08548",
+    "minecraft:visual/water_fog_color":"#1e2e2a"
 
   },
   "carvers": [],

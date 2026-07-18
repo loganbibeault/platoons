@@ -18,13 +18,29 @@ execute as @a[predicate=platoons:pocket/holdingdormantmap] run title @s subtitle
 
 # detect key
 
-execute as @e[tag=portal_keyhole,tag=!keyhole_opening,tag=!keyhole_open] on target run execute at @s[predicate=platoons:pocket/holdingkeymap] run function platoons:pocket/open/check
+execute as @e[tag=portal_keyhole,tag=!keyhole_opening,tag=!keyhole_open] on target run execute at @s[predicate=platoons:pocket/holdingkeymap] run function platoons:pocket/portal/check
 
 # reset detection
 execute as @e[tag=portal_keyhole] run data remove entity @s interaction
 
-# portal opening anim
-execute as @e[type=interaction,tag=keyhole_active,tag=!keyhole_open] run function platoons:pocket/open/loop
+# if theres an active keyhole/portal, run the open loop
+execute as @n[type=interaction,tag=keyhole_active] at @s run function platoons:pocket/portal/loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # generate armor on suitable armor stands
 #execute as @e[tag=pocket_armor] at @s if entity @a[distance=0..30] run function platoons:pocket/

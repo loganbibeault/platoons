@@ -1,18 +1,54 @@
 {
   "type": "minecraft:dialog_list",
-  "button_width": 310,
-  "columns": 1,
-  "dialogs": "#minecraft:quick_actions",
-  "exit_action": {
-    "label": {
-      "translate": "gui.back"
+  "title": "                                                                                                                                                     ",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "TITLE AHHHHH"
     },
-    "width": 200
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:granite"
+      },
+      "description": {
+        "contents": "ONE",
+        "width": 100
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:andesite"
+      },
+      "description": {
+        "contents": "TWO",
+        "width": 100
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:diorite"
+      },
+      "description": {
+        "contents": "THREE",
+        "width": 100
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:tuff"
+      },
+      "description": {
+        "contents": "FOUR",
+        "width": 100
+      }
+    }
+  ],
+  "exit_action": {
+    "label": "Cancel"
   },
-  "external_title": {
-    "translate": "menu.quick_actions"
-  },
-  "title": {
-    "translate": "menu.quick_actions.title"
-  }
+  "dialogs": []
 }

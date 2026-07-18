@@ -1,0 +1,11 @@
+{
+  "type": "platoons:pocket/boneyard",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "platoons:pocket/boneyard",
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}
