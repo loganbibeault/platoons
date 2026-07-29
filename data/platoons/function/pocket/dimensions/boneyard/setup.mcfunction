@@ -1,0 +1,2 @@
+function platoons:pocket/portal/animations/exit/2x2/0
+execute at @e[tag=pocket_exit] run summon armor_stand ~ ~ ~ {Tags:["pocketwaypoint"],NoBasePlate:1b,Small:1b,Invisible:1b,Marker:1b,CustomNameVisible:0b,CustomName:"Pocket Portal",attributes:[{id:"minecraft:waypoint_transmit_range",base:9999}]}

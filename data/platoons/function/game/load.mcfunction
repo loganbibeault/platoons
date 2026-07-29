@@ -119,10 +119,15 @@ team modify nospirit prefix {"text":"[☠] ","color":"gray"}
 # ======================================================
 
 # pocket bossbar
-bossbar add platoons:pocketcollapse {"text":"Dimension Collapsing In"}
+bossbar add platoons:pocketcollapse {"text":"Dimension Collapsing In","color":"#B88BD6"}
 bossbar set platoons:pocketcollapse color blue
 bossbar set platoons:pocketcollapse max 18000
 bossbar set platoons:pocketcollapse style notched_20
+
+# refreshes item display entity used for calculating distances
+kill 0000000d-0109-0097-0116-000000000104
+summon item_display 0. 0 0. {UUID:[I;13,17367191,18219008,260]}
+
 
 # ======================================================
 # DEBUG (TEMP)

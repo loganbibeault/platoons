@@ -1,0 +1,2 @@
+data merge entity @n[tag=portalexitanim,tag=4,tag=new] {interpolation_duration:30,transformation:{left_rotation:[1f,1f,1f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,0f]}}
+tag @e[type=item_display,tag=portalexitanim,tag=4] remove new

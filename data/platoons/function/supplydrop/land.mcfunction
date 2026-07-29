@@ -40,6 +40,3 @@ schedule clear platoons:supplydrop/animations/supplydrop/7
 
 schedule clear platoons:supplydrop/animations/beacon/animate
 schedule clear platoons:supplydrop/animations/beacon/reset
-
-# kill distance tracking item display
-kill 0000000d-0109-0097-0116-000000000104

@@ -7,3 +7,9 @@ function platoons:pocket/dimensions/desolatia/spawn with storage platoons:pocket
 
 # set title sequence
 data modify storage platoons:pocket title set value {"bold":true,"text":"𝗗𝗲𝘀𝗼𝗹𝗮𝘁𝗶𝗮","color":"#e69c4e"}
+
+# set active dimension loop
+data modify storage platoons:pocket loop set value desolatia
+
+# start portal exit anim
+schedule function platoons:pocket/dimensions/desolatia/setup 20

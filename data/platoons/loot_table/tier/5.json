@@ -740,7 +740,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_sword",
+          "name": "minecraft:glass_pane",
           "functions": [
             {
               "function": "minecraft:set_count",

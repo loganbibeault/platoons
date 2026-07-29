@@ -418,7 +418,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_sword",
+          "name": "minecraft:glass_pane",
           "conditions": [
             {
               "condition": "minecraft:random_chance",

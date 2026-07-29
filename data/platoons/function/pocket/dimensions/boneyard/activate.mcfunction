@@ -7,3 +7,9 @@ function platoons:pocket/dimensions/boneyard/spawn with storage platoons:pocketp
 
 # set title sequence
 data modify storage platoons:pocket title set value {"bold":true,"text":"𝗧𝗵𝗲 𝗕𝗼𝗻𝗲𝘆𝗮𝗿𝗱","color":"#9e302e"}
+
+# set active dimension loop
+data modify storage platoons:pocket loop set value boneyard
+
+# start portal exit anim
+schedule function platoons:pocket/dimensions/boneyard/setup 20

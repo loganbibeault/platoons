@@ -18,7 +18,7 @@ execute as @a[predicate=platoons:pocket/holdingdormantmap] run title @s subtitle
 
 # detect key
 
-execute as @e[tag=portal_keyhole,tag=!keyhole_opening,tag=!keyhole_open] on target run execute at @s[predicate=platoons:pocket/holdingkeymap] run function platoons:pocket/portal/check
+execute as @e[tag=portal_keyhole,tag=!keyhole_active] on target run execute at @s[predicate=platoons:pocket/holdingkeymap] run function platoons:pocket/portal/check
 
 # reset detection
 execute as @e[tag=portal_keyhole] run data remove entity @s interaction
@@ -26,34 +26,3 @@ execute as @e[tag=portal_keyhole] run data remove entity @s interaction
 # if theres an active keyhole/portal, run the open loop
 execute as @n[type=interaction,tag=keyhole_active] at @s run function platoons:pocket/portal/loop
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# generate armor on suitable armor stands
-#execute as @e[tag=pocket_armor] at @s if entity @a[distance=0..30] run function platoons:pocket/
-
-execute in platoons:pocket/desolatia at @a[distance=0..] run particle minecraft:falling_dust{block_state:"minecraft:jungle_planks"} ~ ~ ~ 30 30 30 1 10
-
-execute if entity @e[tag=pocket_exit] at @e[tag=small_structure_gen] run place jigsaw platoons:desolatia/small_structure small_structure 1 ~ ~ ~
-execute if entity @e[tag=pocket_exit] run kill @e[tag=small_structure_gen]
-execute if entity @e[tag=pocket_exit] at @e[tag=big_structure_gen] run place jigsaw platoons:desolatia/big_structure big_structure 1 ~ ~ ~
-execute if entity @e[tag=pocket_exit] run kill @e[tag=big_structure_gen]
-
-#execute if entity @e[tag=pocket_exit] at @e[tag=pocket_bookshelf] run loot insert ~ ~ ~ loot minecraft:chests/general_chiseled_bookshelf
-execute if entity @e[tag=pocket_exit] run kill @e[tag=pocket_bookshelf]
-
-execute if entity @e[tag=pocket_exit] at @e[tag=boneyard_tower_top] run place jigsaw platoons:boneyard/tower_top tower_top 1 ~ ~3 ~
-execute if entity @e[tag=pocket_exit] run kill @e[tag=boneyard_tower_top]
