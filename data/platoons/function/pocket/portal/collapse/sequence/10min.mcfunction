@@ -1,0 +1,3 @@
+execute at @e[tag=pocket_exit] as @a[distance=0..] at @s run playsound minecraft:block.respawn_anchor.charge master @a ~ ~ ~ 1 2
+execute at @e[tag=pocket_exit] run tellraw @a[distance=0..] [{"text":"This ","color":"#B88BD6"},{"text":"pocket dimension","color":"gold"},{"text":" will "},{"text":"collapse","color":"#D97373"},{"text":" in"},{"text":" ten minutes","color":"#9DE07E"},{"text":"!"}]
+schedule function platoons:pocket/portal/collapse/sequence/5min 300s

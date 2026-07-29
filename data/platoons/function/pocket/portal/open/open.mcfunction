@@ -22,3 +22,6 @@ scoreboard players set #pockettimer general 20
 
 # glass pane animation thing
 function platoons:pocket/portal/animations/portal/0
+
+# schedule timer announcements
+schedule function platoons:pocket/portal/collapse/sequence/10min 300s

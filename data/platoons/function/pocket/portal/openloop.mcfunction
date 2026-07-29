@@ -25,4 +25,3 @@ execute if score #pockettimer_s general matches 0..9 run bossbar set platoons:po
 
 # dimension-specific loop
 $execute as @e[tag=pocket_exit,type=marker] at @s run function platoons:pocket/dimensions/$(loop)/loop
-

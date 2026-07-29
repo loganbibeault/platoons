@@ -6,5 +6,5 @@ clear @s
 effect clear @s
 attribute @s minecraft:safe_fall_distance base reset
 tag @s add limboleft
-execute in the_end run tp @s 0 2 0 0 90
+execute in the_end run tp @s 0 5 0 0 90
 team leave @s

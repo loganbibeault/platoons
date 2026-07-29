@@ -30,10 +30,11 @@ time of platoons:limbo pause
 
 # end setup for leaving
 execute in the_end run forceload add 0 0
-execute in the_end run fill -2 0 -2 2 6 2 end_gateway
-execute in the_end run fill -1 0 -1 1 5 1 barrier
-execute in the_end run fill 0 2 0 0 4 0 air
+execute in the_end run fill -1 0 -1 1 8 1 barrier
+execute in the_end run fill 0 2 0 0 6 0 air
 execute in the_end run fill -1 1 -1 1 1 1 end_portal
+kill @e[tag=respawn_gateway]
+execute in the_end run summon block_display 0 0 0 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[2.5f,8f,2.5f],scale:[-5f,-8f,-5f]},block_state:{Name:"minecraft:end_gateway"}}
 
 # ======================================================
 # SCOREBOARD
