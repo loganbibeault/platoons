@@ -1,0 +1,51 @@
+{
+  "name": "platoons:upstairs",
+  "fallback": "platoons:sewer/upstairs_end",
+  "elements": [
+	{	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/upstairs/upstairs_1",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/upstairs/upstairs_2",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/upstairs/upstairs_3",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/upstairs/upstairs_4",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/upstairs/upstairs_5",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

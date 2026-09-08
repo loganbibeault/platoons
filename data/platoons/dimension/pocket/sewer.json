@@ -1,9 +1,9 @@
 {
-  "type": "platoons:sewer",
+  "type": "platoons:pocket/sewer",
   "generator": {
     "type": "minecraft:flat",
     "settings": {
-      "biome": "platoons:sewergen",
+      "biome": "platoons:pocket/sewer/sewergen",
       "layers": [
         {
           "height": 2,

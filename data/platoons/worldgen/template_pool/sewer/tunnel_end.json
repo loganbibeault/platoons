@@ -1,0 +1,42 @@
+{
+  "name": "platoons:tunnel_end",
+  "fallback": "platoons:sewer/tunnel_end",
+  "elements": [
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/tunnel_end/tunnel_end_1",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/tunnel_end/tunnel_end_2",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/tunnel_end/tunnel_end_3",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 3,
+      "element": {
+        "location": "platoons:sewer/tunnel_end/tunnel_end_4",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

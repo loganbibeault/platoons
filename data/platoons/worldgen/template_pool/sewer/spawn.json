@@ -1,0 +1,15 @@
+{
+  "name": "platoons:spawn",
+  "fallback": "minecraft:empty",
+  "elements": [
+	{	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/spawn/spawn_1",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

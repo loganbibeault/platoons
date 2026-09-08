@@ -1,0 +1,24 @@
+{
+  "name": "platoons:tall_end",
+  "fallback": "empty",
+  "elements": [
+	{	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/tall_end/tall_e1",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/tall_end/tall_e2",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

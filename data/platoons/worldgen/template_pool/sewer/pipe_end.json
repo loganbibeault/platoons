@@ -1,0 +1,105 @@
+{
+  "name": "platoons:pipe_end",
+  "fallback": "empty",
+  "elements": [
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/pipe_end/pipe_fb",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/pipe_end/pipe_fb2",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/pipe_end/pipe_fb3",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/pipe_end/pipe_fb4",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/pipe_end/pipe_fb5",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 10,
+      "element": {
+        "location": "platoons:sewer/pipe_end/pipe_fb5",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 20,
+      "element": {
+        "location": "platoons:sewer/pipe/pipe_e",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 20,
+      "element": {
+        "location": "platoons:sewer/pipe/pipe_e2",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 20,
+      "element": {
+        "location": "platoons:sewer/pipe/pipe_e3",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 20,
+      "element": {
+        "location": "platoons:sewer/pipe/pipe_e4",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {	
+      "weight": 20,
+      "element": {
+        "location": "platoons:sewer/pipe/pipe_e5",
+        "processors": "minecraft:empty",
+		    "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
