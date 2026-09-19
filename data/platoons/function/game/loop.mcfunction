@@ -37,6 +37,9 @@ function platoons:pocket/loop
 # shop
 function platoons:shop/loop
 
+# mannequin
+function platoons:mannequin/loop
+
 # ======================================================
 # END OF LINE / RESETS
 # ======================================================

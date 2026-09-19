@@ -80,6 +80,18 @@ scoreboard objectives add tierup dummy
 
 # shop trigger
 scoreboard objectives add shop trigger
+
+# player ID system
+scoreboard objectives add ID dummy
+
+# for checking killed-while-offline players
+scoreboard objectives add offlinedead deathCount
+
+# basic health tracker
+scoreboard objectives add health health
+scoreboard objectives add healthstore dummy
+scoreboard objectives add applydamage dummy
+
 # ======================================================
 # TEAMS
 # ======================================================
