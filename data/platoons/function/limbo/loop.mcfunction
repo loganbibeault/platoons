@@ -3,6 +3,7 @@ execute in platoons:limbo run kill @e[distance=0..,type=item]
 
 # runs effects every tick
 execute in platoons:limbo run execute as @a[distance=0..] run function platoons:limbo/limboeffects
+execute in platoons:limbo run execute as @e[type=mannequin,distance=0..] run function platoons:limbo/limboeffects
 
 # starting respawn timer of 2 min
 execute in minecraft:overworld run execute as @e[type=player,distance=0..,tag=isdead] run scoreboard players set @s limbotimer_m 2
@@ -58,3 +59,6 @@ scoreboard players remove @a spirittimer 1
 
 team join nospirit @a[scores={spirittimer=1..,Kills=..0}]
 team join Tier0 @a[scores={spirittimer=..0},team=nospirit]
+
+# logged out mannequins are visible
+execute in platoons:limbo run execute as @e[type=mannequin,distance=0..] run team join limboteam @s

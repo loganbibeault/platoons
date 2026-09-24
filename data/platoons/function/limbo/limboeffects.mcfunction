@@ -1,5 +1,6 @@
 effect give @s minecraft:saturation infinite 0 true
 effect give @s minecraft:resistance infinite 255 true
+effect give @s minecraft:weakness infinite 255 true
 effect give @s minecraft:speed infinite 0 true
 effect give @s minecraft:jump_boost infinite 1 true
 effect give @s minecraft:haste infinite 40 true

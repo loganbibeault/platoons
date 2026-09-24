@@ -5,7 +5,7 @@
 execute as @e[type=marker,tag=marker_id,tag=!offline] at @s[tag=!offline_dead] run function platoons:mannequin/follow
 
 # offline checks
-execute as @e[type=marker,tag=marker_id,tag=offline] at @s run function platoons:mannequin/offline
+execute as @e[type=marker,tag=marker_id,tag=offline,tag=!offline_dead] at @s run function platoons:mannequin/offline
 execute as @e[type=marker,tag=marker_id,tag=offline_dead] at @s run function platoons:mannequin/offline_dead
 
 # apply damage difference at relog
@@ -14,3 +14,4 @@ execute as @a[scores={applydamage=1}] run function platoons:mannequin/update_hea
 
 # clear ppl who died
 clear @a[tag=clearself]
+

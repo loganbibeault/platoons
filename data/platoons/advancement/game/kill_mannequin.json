@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:mannequin",
+          "minecraft:nbt": "{Tags:[\"offlineplayer\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "platoons:mannequin/killer"
+  }
+}

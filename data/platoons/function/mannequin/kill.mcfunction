@@ -8,3 +8,8 @@ execute if score #items general matches 1.. run function platoons:mannequin/retu
 
 execute unless entity @s[tag=equipreturned] run function platoons:mannequin/return_equipment
 tag @s add equipreturned
+
+execute positioned ~ ~ ~ run function platoons:tier/death
+
+# remove slime
+kill @n[tag=offlineseat]

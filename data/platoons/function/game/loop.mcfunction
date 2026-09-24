@@ -45,6 +45,7 @@ function platoons:mannequin/loop
 # ======================================================
 
 # resets the sub-tick kill/death checks
+
 scoreboard players reset @a killed_by_player
 scoreboard players reset @a player_kills
 

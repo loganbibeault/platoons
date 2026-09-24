@@ -4,6 +4,9 @@ summon mannequin ~ ~ ~ {Rotation:[0F,60F],Tags:["offlineplayer","new"],immovable
 # link mannequin to marker    
 scoreboard players operation @n[tag=new,tag=offlineplayer] ID = @s ID
 
+# copies Kill count for tier
+scoreboard players operation @n[tag=new,tag=offlineplayer] Kills = @s Kills
+
 # copies skin by referencing UUID
 data modify entity @n[type=minecraft:mannequin,tag=new] profile.id set from entity @s data.UUID
 
@@ -25,8 +28,21 @@ ride @n[type=minecraft:mannequin,tag=new] mount @n[type=slime,tag=offlineseat]
 # link slime
 scoreboard players operation @n[tag=offlineseat] ID = @s ID
 
+# assign tier
+team join Tier0 @n[tag=new,tag=offlineplayer,scores={Kills=0}]
+team join Tier1 @n[tag=new,tag=offlineplayer,scores={Kills=1..2}]
+team join Tier2 @n[tag=new,tag=offlineplayer,scores={Kills=3..5}]
+team join Tier3 @n[tag=new,tag=offlineplayer,scores={Kills=6..9}]
+team join Tier4 @n[tag=new,tag=offlineplayer,scores={Kills=10..15}]
+team join Tier5 @n[tag=new,tag=offlineplayer,scores={Kills=16..}]
+
+team join Tier0 @s[scores={Kills=0}]
+team join Tier1 @s[scores={Kills=1..2}]
+team join Tier2 @s[scores={Kills=3..5}]
+team join Tier3 @s[scores={Kills=6..9}]
+team join Tier4 @s[scores={Kills=10..15}]
+team join Tier5 @s[scores={Kills=16..}]
 
 tag @e[tag=offlineplayer,tag=new] remove new
 
-say create
 tag @s add offline
