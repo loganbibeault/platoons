@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "                                                                                                                                                     "
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Platoons Game Setup"
+      }
+    }
+  ],
+  "inputs": [],
+  "after_action": "close",
+  "pause": false,
+  "actions": [
+    {
+      "label": {
+        "text": "Custom Items",
+        "color": "#EBDE6E"
+      },
+      "width": 120
+    },
+    {
+      "label": {
+        "text": "Teams",
+        "color": "#EBDE6E"
+      },
+      "width": 120
+    },
+    {
+      "label": {
+        "text": "Game Options",
+        "color": "#EBDE6E"
+      },
+      "width": 120
+    },
+    {
+      "label": {
+        "text": "Recipes",
+        "color": "#EBDE6E"
+      },
+      "width": 120
+    },
+    {
+      "label": "Close",
+      "width": 120
+    },
+    {
+      "label": {
+        "text": "Start Game",
+        "color": "#9DE07E"
+      },
+      "width": 70
+    }
+  ]
+}

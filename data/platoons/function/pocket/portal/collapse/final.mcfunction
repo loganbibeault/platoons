@@ -1,5 +1,6 @@
 execute at @e[tag=pocket_exit] as @a[distance=0..] run damage @s 1000 outside_border
 execute at @e[tag=pocket_exit] run kill @a[distance=0..]
+execute at @e[tag=pocket_exit] run kill @e[tag=offlineplayer,distance=0..]
 
 execute at @e[tag=keyhole_open] run fill ~-1 ~3 ~ ~1 ~1 ~ air destroy
 execute at @e[tag=keyhole_open] run fill ~-1 ~ ~ ~1 ~ ~ minecraft:jigsaw[orientation=north_up]
@@ -34,4 +35,5 @@ schedule clear platoons:pocket/portal/animations/portal/5
 schedule clear platoons:pocket/portal/animations/portal/6
 schedule clear platoons:pocket/portal/animations/portal/7
 
+bossbar set platoons:pocketcollapse players
 say collapsed

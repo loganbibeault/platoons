@@ -15,7 +15,11 @@ execute as @a run execute store result score @s z run data get entity @s Pos[2]
 execute store result score #playercount general if entity @a
 execute if score #debug general matches 1 run scoreboard players set #playercount general 999
 
+# survival mode for all during game
 execute unless score #debug general matches 1 run gamemode survival @a
+
+# hide command feedback during game
+execute if score #debug general matches 1 run gamerule send_command_feedback true
 # ======================================================
 # GAME
 # ======================================================

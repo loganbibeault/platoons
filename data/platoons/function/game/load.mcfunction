@@ -81,6 +81,17 @@ scoreboard objectives add tierup dummy
 # shop trigger
 scoreboard objectives add shop trigger
 
+# setup custom trigger
+scoreboard objectives add editcustom trigger
+#scoreboard objectives add editcustom1 trigger
+#scoreboard objectives add editcustom2 trigger
+#scoreboard objectives add editcustom3 trigger
+#scoreboard objectives add editcustom4 trigger
+scoreboard players set #custom1 general 1
+scoreboard players set #custom2 general 1
+scoreboard players set #custom3 general 1
+scoreboard players set #custom4 general 1
+
 # player ID system
 scoreboard objectives add ID dummy
 
@@ -149,7 +160,7 @@ summon item_display 0. 0 0. {UUID:[I;13,17367191,18219008,260]}
 say reloaded! 
 
 # for debug: scoreboard players set #debug general 1
-execute if score #debug general matches 1 run gamerule send_command_feedback true
+
 execute if score #debug general matches 1 run say DEBUG MODE!
 
 # ======================================================
@@ -181,3 +192,10 @@ function platoons:limbo/animations/respawn/1
 
 schedule clear platoons:game/loop
 function platoons:game/loop
+
+
+
+data modify storage platoons:shop set1 set value {type:"minecraft:item",item:{id:"minecraft:tipped_arrow",components:{"minecraft:potion_contents":{custom_color:6050900},"minecraft:enchantment_glint_override":1b,"minecraft:tooltip_display":{hide_tooltip:1b}}},description:{contents:[{text:""},{text:"🗡",color:"#D97373",hover_event:{action:"show_text",value:{text:"Offensive",color:"#D97373"}}}," ",{text:"Explosive Arrow",color:"#7EB4CC",hover_event:{action:"show_text",value:["",{"text":"Explosive Arrow","color":"#7EB4CC"},{"text":"\n"},{"text":"It's in the name\n","color":"gray"},{"text":"→ Amount: ","color":"#EBDE6E"},{"text":"2","color":"#9DE07E"},{"text":"\n"},{"text":"→ Cost: ","color":"#EBDE6E"},{"atlas":"minecraft:particles","sprite":"soul_fire_flame"},{"text":"1","color":"#9DE07E"}]}},"\n",{text:"[←]",color:"gray"},{text:" "},{text:"[→]",color:"gold",click_event:{action:"run_command",command:"/trigger editcustom set 1"},hover_event:{action:"show_text",value:{text:"Next",color:"gold"}}}],width:120}}
+data modify storage platoons:shop set2 set value {type:"minecraft:item",item:{id:"minecraft:tipped_arrow",components:{"minecraft:potion_contents":{custom_color:6050900},"minecraft:enchantment_glint_override":1b,"minecraft:tooltip_display":{hide_tooltip:1b}}},description:{contents:[{text:""},{text:"🗡",color:"#D97373",hover_event:{action:"show_text",value:{text:"Offensive",color:"#D97373"}}}," ",{text:"Explosive Arrow",color:"#7EB4CC",hover_event:{action:"show_text",value:["",{"text":"Explosive Arrow","color":"#7EB4CC"},{"text":"\n"},{"text":"It's in the name\n","color":"gray"},{"text":"→ Amount: ","color":"#EBDE6E"},{"text":"2","color":"#9DE07E"},{"text":"\n"},{"text":"→ Cost: ","color":"#EBDE6E"},{"atlas":"minecraft:particles","sprite":"soul_fire_flame"},{"text":"1","color":"#9DE07E"}]}},"\n",{text:"[←]",color:"gray"},{text:" "},{text:"[→]",color:"gold",click_event:{action:"run_command",command:"/trigger editcustom set 2"},hover_event:{action:"show_text",value:{text:"Next",color:"gold"}}}],width:120}}
+data modify storage platoons:shop set3 set value {type:"minecraft:item",item:{id:"minecraft:tipped_arrow",components:{"minecraft:potion_contents":{custom_color:6050900},"minecraft:enchantment_glint_override":1b,"minecraft:tooltip_display":{hide_tooltip:1b}}},description:{contents:[{text:""},{text:"🗡",color:"#D97373",hover_event:{action:"show_text",value:{text:"Offensive",color:"#D97373"}}}," ",{text:"Explosive Arrow",color:"#7EB4CC",hover_event:{action:"show_text",value:["",{"text":"Explosive Arrow","color":"#7EB4CC"},{"text":"\n"},{"text":"It's in the name\n","color":"gray"},{"text":"→ Amount: ","color":"#EBDE6E"},{"text":"2","color":"#9DE07E"},{"text":"\n"},{"text":"→ Cost: ","color":"#EBDE6E"},{"atlas":"minecraft:particles","sprite":"soul_fire_flame"},{"text":"1","color":"#9DE07E"}]}},"\n",{text:"[←]",color:"gray"},{text:" "},{text:"[→]",color:"gold",click_event:{action:"run_command",command:"/trigger editcustom set 3"},hover_event:{action:"show_text",value:{text:"Next",color:"gold"}}}],width:120}}
+data modify storage platoons:shop set4 set value {type:"minecraft:item",item:{id:"minecraft:tipped_arrow",components:{"minecraft:potion_contents":{custom_color:6050900},"minecraft:enchantment_glint_override":1b,"minecraft:tooltip_display":{hide_tooltip:1b}}},description:{contents:[{text:""},{text:"🗡",color:"#D97373",hover_event:{action:"show_text",value:{text:"Offensive",color:"#D97373"}}}," ",{text:"Explosive Arrow",color:"#7EB4CC",hover_event:{action:"show_text",value:["",{"text":"Explosive Arrow","color":"#7EB4CC"},{"text":"\n"},{"text":"It's in the name\n","color":"gray"},{"text":"→ Amount: ","color":"#EBDE6E"},{"text":"2","color":"#9DE07E"},{"text":"\n"},{"text":"→ Cost: ","color":"#EBDE6E"},{"atlas":"minecraft:particles","sprite":"soul_fire_flame"},{"text":"1","color":"#9DE07E"}]}},"\n",{text:"[←]",color:"gray"},{text:" "},{text:"[→]",color:"gold",click_event:{action:"run_command",command:"/trigger editcustom set 4"},hover_event:{action:"show_text",value:{text:"Next",color:"gold"}}}],width:120}}

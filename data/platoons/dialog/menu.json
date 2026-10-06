@@ -68,6 +68,9 @@
   "inputs": [],
   "after_action": "wait_for_response",
   "pause": false,
+  "exit_action": {
+    "label": "Back"
+  },
   "actions": [
     {
       "label": "Spirit Shop",
