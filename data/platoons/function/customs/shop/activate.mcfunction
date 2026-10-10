@@ -1,0 +1,2 @@
+data modify storage platoons:shop buttons set value [{text:"[Purchase]",color:"#9DE07E",click_event:{action:"run_command",command:"/trigger editcustom set -$(customchange)"}}]
+function platoons:customs/shop/display with storage platoons:shop

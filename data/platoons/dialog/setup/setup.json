@@ -12,7 +12,7 @@
     }
   ],
   "inputs": [],
-  "after_action": "close",
+  "after_action": "wait_for_response",
   "pause": false,
   "actions": [
     {
@@ -20,7 +20,11 @@
         "text": "Custom Items",
         "color": "#EBDE6E"
       },
-      "width": 120
+      "width": 120,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger editcustom set 5"
+      }
     },
     {
       "label": {

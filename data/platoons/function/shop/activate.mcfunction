@@ -1,1 +1,0 @@
-function platoons:shop/display with storage platoons:shop
