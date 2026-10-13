@@ -16,3 +16,7 @@ playsound minecraft:entity.firework_rocket.launch master @a ~ ~15 ~ 1 0.6
 playsound minecraft:entity.shulker.shoot master @a ~ ~ ~
 
 data merge entity @s {Color:8b}
+data merge entity @s {Peek:100b}
+
+execute as @n[tag=popbox_face] at @s run tp @s ~ ~-0.301 ~
+data merge entity @n[tag=popbox_face_low] {item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdmMzQwOGUwOGU3OTFlZDJmYmRkOTBhNzM0ZjlkMWNhNGE4NTdmMjU5ZTU0NjZjNDQzNzE0ZTZkYzgzNjczYiJ9fX0="}]}}}}

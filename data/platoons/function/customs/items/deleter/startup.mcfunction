@@ -11,5 +11,5 @@ execute store result score @s z run data get entity @s Pos[2]
 tellraw @a [{"text":"A","color":"#D97373"},{"text":" deleter","color":"#7EB4CC"},{"text":" is carving through the world at "},{"text":"[","color":"#B88BD6"},{"score":{"name":"@s","objective":"x"}},{"text":"] [","color":"#B88BD6"},{"score":{"name":"@s","objective":"z"}},{"text":"]","color":"#B88BD6"},{"text":"!","color":"#D97373"}]
 
 execute at @s run summon marker ~ 320 ~ {Tags:["deleter"]}
-execute as @e[type=marker,tag=deleter] at @s run function platoons:customs/deleter/checkloop
+execute as @e[type=marker,tag=deleter] at @s run function platoons:customs/items/deleter/checkloop
 kill @s

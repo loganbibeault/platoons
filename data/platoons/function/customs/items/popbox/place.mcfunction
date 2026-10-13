@@ -1,0 +1,5 @@
+summon item_display ~ ~1.1 ~ {Tags:["popbox_face"],item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFkMDZiMzUzM2U4MTBmNmRjM2E0ODU0NTBhMDRjNTk0OTkwOWQzZjdiMmFjOTE3MzI5YjZhMDI2MjJkNjM2In19fQ=="}]}}}}
+summon item_display ~ ~1.1 ~ {Tags:["popbox_face_low"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.3f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFkMDZiMzUzM2U4MTBmNmRjM2E0ODU0NTBhMDRjNTk0OTkwOWQzZjdiMmFjOTE3MzI5YjZhMDI2MjJkNjM2In19fQ=="}]}}}}
+scoreboard players set @s tickdown -21
+playsound minecraft:block.shulker_box.open neutral @a ~ ~ ~ 1 1.5
+tag @s remove popbox_new

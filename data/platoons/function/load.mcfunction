@@ -46,6 +46,9 @@ scoreboard objectives add x dummy
 scoreboard objectives add y dummy
 scoreboard objectives add z dummy
 
+# generic timer
+scoreboard objectives add tickdown dummy
+
 # ======================================================
 # TEAMS
 # ======================================================
