@@ -1,0 +1,9 @@
+particle minecraft:wax_off ~ ~1 ~ 0.02 0.02 0.02 0.1 1 normal
+particle minecraft:wax_off ~ ~0.75 ~ 0.02 0.02 0.02 0.1 1 normal
+particle minecraft:wax_off ~ ~0.5 ~ 0.02 0.02 0.02 0.1 1 normal
+particle minecraft:wax_off ~ ~0.25 ~ 0.02 0.02 0.02 0.1 1 normal
+particle minecraft:wax_off ~ ~ ~ 0.02 0.02 0.02 0.1 1 normal
+particle minecraft:wax_off ~ ~-0.25 ~ 0.02 0.02 0.02 0.1 1 normal
+particle minecraft:wax_off ~ ~-0.5 ~ 0.02 0.02 0.02 0.1 1 normal
+particle minecraft:wax_off ~ ~-0.75 ~ 0.02 0.02 0.02 0.1 1 normal
+particle minecraft:wax_off ~ ~-1 ~ 0.02 0.02 0.02 0.1 1 normal
