@@ -1,0 +1,3 @@
+playsound minecraft:block.note_block.iron_xylophone master @s ~ ~ ~ 100 0.85 1
+dialog show @s {type:"minecraft:multi_action",title:"                                                                                                                                                     ",body:[{type:"minecraft:plain_message",contents:[{text:"Spirit Shop\n\n",color:"#7EB4CC"},{text:"\n\n\n\n\n\n\n\nYou don't have enough ",color:"#D97373"},{"atlas":"minecraft:particles","sprite":"soul_fire_flame","color":"white"},{text:"Spirits!\n\n\n\n\n\n\n\n",color:"#D97373"}]}],inputs:[],actions:[{label:"Back",action:{type:"minecraft:show_dialog",dialog:"platoons:menu"}}]}
+scoreboard players set #notavail general 1

@@ -3,4 +3,6 @@ $execute if score #custom$(customchange) general matches 2..14 run data modify s
 $execute if score #custom$(customchange) general matches 15 run data modify storage platoons:shop buttons set value [{text:"[←]",color:"gold",click_event:{action:"run_command",command:"/trigger editcustom set -$(customchange)"}},{text:" "},{text:"[→]",color:"dark_gray"}]
 
 
+scoreboard players set #lookup general 1 
+
 function platoons:customs/shop/setup/lookup with storage platoons:shop

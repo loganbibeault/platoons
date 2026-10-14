@@ -1,6 +1,6 @@
 scoreboard players enable @a shop
-execute as @a unless score @s shop matches 0 run function platoons:customs/shop/activate
-scoreboard players set @a shop 0
+execute as @a unless score @s shop matches -1 run function platoons:customs/shop/activate
+scoreboard players set @a shop -1
 
 # setting purchasable items
 
@@ -28,5 +28,7 @@ execute as @a if score @s editcustom matches 4 run data modify storage platoons:
 execute as @a if score @s editcustom matches -4 run scoreboard players remove #custom4 general 1
 execute as @a if score @s editcustom matches -4 run data modify storage platoons:shop customchange set value 4
 
-execute as @a unless score @s editcustom matches 0 run function platoons:customs/shop/setup/buttons with storage platoons:shop
+execute as @a unless score @s editcustom matches 0 run function platoons:customs/shop/setup/lookup with storage platoons:shop
 scoreboard players set @a[tag=vip] editcustom 0
+
+scoreboard players add @a spiritcount 0
