@@ -10,6 +10,6 @@ execute as @e[tag=summitpad,tag=!connected] at @s run function platoons:customs/
 execute as @e[tag=summitpad,tag=connected] at @s run function platoons:customs/items/summitpad/connected
 
 # temp platform removal
-execute as @e[tag=summitpadhitbox] at @s unless entity @e[tag=summitpad_exit,distance=0..1] positioned ~ ~1 ~ unless entity @e[type=!shulker,type=!marker,type=!item,type=!block_display,distance=..1.5] run function platoons:customs/items/summitpad/deletehitbox
+execute as @e[tag=summitpadhitbox] at @s unless entity @e[tag=summitpad_exit,distance=0..1] positioned ~ ~1 ~ align xyz unless entity @e[type=!shulker,type=!marker,type=!item,type=!block_display,dy=2] run function platoons:customs/items/summitpad/deletehitbox
 
 schedule function platoons:customs/items/summitpad/loop 1

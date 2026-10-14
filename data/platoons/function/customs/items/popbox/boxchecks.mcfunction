@@ -15,3 +15,6 @@ scoreboard players remove @s tickdown 1
 
 # Placing (face + sounds)
 execute as @s[tag=popbox_new] run function platoons:customs/items/popbox/place
+
+# Keep face with rest
+execute unless entity @n[tag=popbox_face,distance=..1.2] run function platoons:customs/items/popbox/moved

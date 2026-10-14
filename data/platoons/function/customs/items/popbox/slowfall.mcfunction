@@ -4,7 +4,7 @@ execute as @s[scores={pb_glidesound=200}] run playsound minecraft:item.elytra.fl
 scoreboard players remove @s pb_glidesound 1
 scoreboard players set @s[scores={pb_glidesound=..0}] pb_glidesound 200
 
-tag @s[scores={pb_glidesound=219},nbt={active_effects:[{id:"minecraft:slow_falling"}]}] add pb_preslowfall
+tag @s[scores={pb_glidesound=219},predicate=platoons:customs/popbox/has_slowfalling] add pb_preslowfall
 
 effect give @s[tag=!pb_preslowfall] slow_falling 1 0 true
 effect give @s[tag=pb_preslowfall] slow_falling 1 0 false
