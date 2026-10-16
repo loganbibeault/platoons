@@ -5,7 +5,7 @@ kill @s[scores={tickdown=0}]
 scoreboard players remove @s tickdown 1
 
 # Remove plants under the boulder
-execute if block ~ ~ ~ #platoons:customs/shrubbery run setblock ~ ~ ~ air destroy
+execute if block ~ ~ ~ #platoons:shrubbery run setblock ~ ~ ~ air destroy
 
 # falling particles
 execute run particle falling_dust{block_state:"minecraft:deepslate"} ~ ~ ~ 0.15 0.15 0.15 1 1 normal @a

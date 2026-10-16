@@ -5,6 +5,7 @@ scoreboard objectives add chilidmg_taken minecraft.custom:damage_taken
 scoreboard objectives add chilidmg_dealt minecraft.custom:damage_dealt
 
 scoreboard players remove @a[tag=chilifrenzy] chilitimer 1
+execute as @a[scores={chilidmg_taken=1..}] at @s if entity @a[tag=chilifrenzy,scores={chilidmg_dealt=1..}] run fill ~.5 ~-1 ~.5 ~-.5 ~ ~-.5 fire replace #platoons:customs/lavaplace
 
 
 
