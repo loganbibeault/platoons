@@ -3,7 +3,7 @@
 		"air",
 		"fire",
 		"lava",
-		"#platoons:customs/shrubbery",
+		"#platoons:shrubbery",
 		"snow"
 	]
 }
