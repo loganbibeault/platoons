@@ -5,6 +5,7 @@ scoreboard objectives add fb_tickdown dummy
 scoreboard objectives add ff_tickdown dummy
 scoreboard objectives add ff_tickdownseconds dummy
 
+# flying
 execute as @a[tag=frostguy] at @s run function platoons:customs/items/frostflyer/flying
 
 # spawning frostblocks
@@ -12,9 +13,11 @@ scoreboard players set @e[type=marker,tag=frostblock_new] fb_tickdown 300
 execute at @e[tag=frostblock,scores={fb_tickdown=295..},limit=9] unless entity @e[tag=!frostblock_new,tag=frostblock,distance=..0.25] run playsound block.amethyst_block.resonate block @a ~ ~ ~ 0.5 0.5
 tag @e[type=marker,tag=frostblock_new] remove frostblock_new
 
+# block checks
 execute as @e[tag=frostblock] at @s run function platoons:customs/items/frostflyer/blockchecks
 
 # slowfall
 execute as @a[tag=ff_slowfall] at @s run function platoons:customs/items/frostflyer/slowfall
+
 
 schedule function platoons:customs/items/frostflyer/loop 1

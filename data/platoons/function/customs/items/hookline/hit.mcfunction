@@ -1,6 +1,10 @@
 scoreboard players set #distance hooklineraycast 200
-tag @a[tag=hooklinehooked] add nofalldmg
+
+tag @p[tag=hooklinehooked] add hooklinenofall
+scoreboard players set @p[tag=hooklinehooked] hooklinenofall 20
+
 tag @s add hooklinehit
+
 execute at @s run playsound minecraft:block.trial_spawner.eject_item master @s ~ ~ ~ 1 0.63
 execute at @s run playsound minecraft:block.trial_spawner.eject_item master @s ~ ~ ~ 1 0.79
 execute at @s run playsound minecraft:block.trial_spawner.eject_item master @s ~ ~ ~ 1 0.94

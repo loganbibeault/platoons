@@ -4,6 +4,7 @@ scoreboard objectives add chilitimer_s dummy
 scoreboard objectives add chilidmg_taken minecraft.custom:damage_taken
 scoreboard objectives add chilidmg_dealt minecraft.custom:damage_dealt
 
+# player loop while in frenzy
 execute as @a[tag=chilifrenzy] at @s run function platoons:customs/items/chilipowder/frenzy
 
 # trail
